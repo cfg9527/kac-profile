@@ -1,0 +1,4 @@
+{
+  "name": "kac-profile",
+  "install": "corepack enable && pnpm install --frozen-lockfile && pnpm exec playwright install chromium && pip install --quiet graphifyy"
+}
