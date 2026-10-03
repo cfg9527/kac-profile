@@ -66,9 +66,9 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1791037418.1723151,
-    "seen": 1791037520.2305603,
-    "ast_hash": "02210d79fa9643b0550ecd17e962639b",
+    "mtime": 1791036991.0876496,
+    "seen": 1791037373.2840645,
+    "ast_hash": "1bdb4a5648475d506f393ea9257170a4",
     "semantic_hash": ""
   },
   "playwright.config.ts": {
@@ -81,6 +81,12 @@
     "mtime": 1791036931.639236,
     "seen": 1791037373.284066,
     "ast_hash": "239f3ebf717465dc636818a1a619398d",
+    "semantic_hash": ""
+  },
+  "test-results/.last-run.json": {
+    "mtime": 1791037331.624171,
+    "seen": 1791037373.2840667,
+    "ast_hash": "f196824657d8858bc7fa44eecbba38b1",
     "semantic_hash": ""
   },
   "tsconfig.json": {
@@ -108,9 +114,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1791037421.8883219,
-    "seen": 1791037520.2305663,
-    "ast_hash": "e00e37689099107b0044c7938e4d3e9e",
+    "mtime": 1791036840.674856,
+    "seen": 1791037373.2840703,
+    "ast_hash": "70b871ab58c0470a938e2c2359922c81",
     "semantic_hash": ""
   },
   "docs/grill/round-1.md": {
@@ -153,24 +159,6 @@
     "mtime": 1791036931.639236,
     "seen": 1791037373.2840755,
     "ast_hash": "a2760511c65806022ad20adf74370ff3",
-    "semantic_hash": ""
-  },
-  ".cursor/environment.json": {
-    "mtime": 1791037418.176315,
-    "seen": 1791037520.230544,
-    "ast_hash": "f48239712b84b5a35caf203a3abd4206",
-    "semantic_hash": ""
-  },
-  "docs/screenshots/desktop.png": {
-    "mtime": 1791037461.9603965,
-    "seen": 1791037520.2305686,
-    "ast_hash": "0db96fac74982400cd46e2b20aae862b",
-    "semantic_hash": ""
-  },
-  "docs/screenshots/mobile.png": {
-    "mtime": 1791037460.2803931,
-    "seen": 1791037520.2305698,
-    "ast_hash": "3042164d7ce2f23e018ea9b5d87fbeea",
     "semantic_hash": ""
   }
 }

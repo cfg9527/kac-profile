@@ -592,7 +592,7 @@
       "file_type": "concept",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L14"
     },
     {
       "id": "postcss_config",
@@ -621,7 +621,7 @@
       "label": "README.md",
       "_origin": "ast",
       "community": 11,
-      "community_name": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
+      "community_name": "README.md",
       "file_type": "document",
       "node_kind": "page",
       "norm_label": "readme.md",
@@ -629,100 +629,16 @@
       "source_location": "L1"
     },
     {
-      "id": "readme_cursor_cloud_environment",
-      "label": "Cursor cloud environment",
+      "id": "readme_kac_profile",
+      "label": "kac-profile",
       "_origin": "ast",
       "community": 11,
-      "community_name": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
+      "community_name": "README.md",
       "file_type": "document",
       "node_kind": "heading",
-      "norm_label": "cursor cloud environment",
-      "source_file": "README.md",
-      "source_location": "L60"
-    },
-    {
-      "id": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
-      "label": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "kac \u5605\u50cf\u7d20\u516c\u5712 \u00b7 kac's pixel park",
+      "norm_label": "kac-profile",
       "source_file": "README.md",
       "source_location": "L1"
-    },
-    {
-      "id": "readme_\u6539\u5b57_editing_copy",
-      "label": "\u6539\u5b57 / Editing copy",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u6539\u5b57 / editing copy",
-      "source_file": "README.md",
-      "source_location": "L30"
-    },
-    {
-      "id": "readme_\u79c1\u96b1_privacy",
-      "label": "\u79c1\u96b1 / Privacy",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u79c1\u96b1 / privacy",
-      "source_file": "README.md",
-      "source_location": "L69"
-    },
-    {
-      "id": "readme_\u7d50\u69cb_layout",
-      "label": "\u7d50\u69cb / Layout",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u7d50\u69cb / layout",
-      "source_file": "README.md",
-      "source_location": "L49"
-    },
-    {
-      "id": "readme_\u90e8\u7f72\u53bb_vercel_kac_\u505a_deploy_to_vercel",
-      "label": "\u90e8\u7f72\u53bb Vercel\uff08KaC \u505a\uff09/ Deploy to Vercel",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u90e8\u7f72\u53bb vercel(kac \u505a)/ deploy to vercel",
-      "source_file": "README.md",
-      "source_location": "L39"
-    },
-    {
-      "id": "readme_\u9ede_build_\u9ede_test",
-      "label": "\u9ede build / \u9ede test",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u9ede build / \u9ede test",
-      "source_file": "README.md",
-      "source_location": "L19"
-    },
-    {
-      "id": "readme_\u9ede\u8dd1\u672c\u5730_run_locally",
-      "label": "\u9ede\u8dd1\u672c\u5730 / Run locally",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u9ede\u8dd1\u672c\u5730 / run locally",
-      "source_file": "README.md",
-      "source_location": "L12"
     },
     {
       "id": "e2e_park_spec",
@@ -755,7 +671,7 @@
       "file_type": "code",
       "norm_label": "dependencies",
       "source_file": "package.json",
-      "source_location": "L16"
+      "source_location": "L12"
     },
     {
       "id": "package_dependencies_next",
@@ -766,7 +682,7 @@
       "file_type": "code",
       "norm_label": "next",
       "source_file": "package.json",
-      "source_location": "L17"
+      "source_location": "L13"
     },
     {
       "id": "package_dependencies_react",
@@ -777,7 +693,7 @@
       "file_type": "code",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L14"
     },
     {
       "id": "package_dependencies_react_dom",
@@ -788,40 +704,7 @@
       "file_type": "code",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L19"
-    },
-    {
-      "id": "package_engines",
-      "label": "engines",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "engines",
-      "source_file": "package.json",
-      "source_location": "L5"
-    },
-    {
-      "id": "package_engines_node",
-      "label": "node",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "node",
-      "source_file": "package.json",
-      "source_location": "L6"
-    },
-    {
-      "id": "package_engines_pnpm",
-      "label": "pnpm",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "pnpm",
-      "source_file": "package.json",
-      "source_location": "L7"
+      "source_location": "L15"
     },
     {
       "id": "package_name",
@@ -843,7 +726,7 @@
       "file_type": "code",
       "norm_label": "packagemanager",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L27"
     },
     {
       "id": "package_private",
@@ -898,7 +781,7 @@
       "file_type": "concept",
       "norm_label": "@playwright/test",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L18"
     },
     {
       "id": "ref_react_dom",
@@ -909,7 +792,7 @@
       "file_type": "concept",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L15"
     },
     {
       "id": "ref_tailwindcss",
@@ -920,7 +803,7 @@
       "file_type": "concept",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L23"
     },
     {
       "id": "ref_tailwindcss_postcss",
@@ -931,7 +814,7 @@
       "file_type": "concept",
       "norm_label": "@tailwindcss/postcss",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L19"
     },
     {
       "id": "ref_types_node",
@@ -942,7 +825,7 @@
       "file_type": "concept",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L20"
     },
     {
       "id": "ref_types_react",
@@ -953,7 +836,7 @@
       "file_type": "concept",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L21"
     },
     {
       "id": "ref_types_react_dom",
@@ -964,7 +847,7 @@
       "file_type": "concept",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L22"
     },
     {
       "id": "ref_typescript",
@@ -975,7 +858,7 @@
       "file_type": "concept",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L24"
     },
     {
       "id": "ref_vitest",
@@ -986,7 +869,7 @@
       "file_type": "concept",
       "norm_label": "vitest",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L25"
     },
     {
       "id": "tsconfig",
@@ -1206,7 +1089,7 @@
       "file_type": "code",
       "norm_label": "devdependencies",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L17"
     },
     {
       "id": "package_devdependencies_playwright_test",
@@ -1217,7 +1100,7 @@
       "file_type": "code",
       "norm_label": "@playwright/test",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L18"
     },
     {
       "id": "package_devdependencies_tailwindcss",
@@ -1228,7 +1111,7 @@
       "file_type": "code",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L23"
     },
     {
       "id": "package_devdependencies_tailwindcss_postcss",
@@ -1239,7 +1122,7 @@
       "file_type": "code",
       "norm_label": "@tailwindcss/postcss",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L19"
     },
     {
       "id": "package_devdependencies_types_node",
@@ -1250,7 +1133,7 @@
       "file_type": "code",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L20"
     },
     {
       "id": "package_devdependencies_types_react",
@@ -1261,7 +1144,7 @@
       "file_type": "code",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L21"
     },
     {
       "id": "package_devdependencies_types_react_dom",
@@ -1272,7 +1155,7 @@
       "file_type": "code",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L22"
     },
     {
       "id": "package_devdependencies_typescript",
@@ -1283,7 +1166,7 @@
       "file_type": "code",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L24"
     },
     {
       "id": "package_devdependencies_vitest",
@@ -1294,7 +1177,7 @@
       "file_type": "code",
       "norm_label": "vitest",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L25"
     },
     {
       "id": "app_layout",
@@ -1360,7 +1243,7 @@
       "file_type": "concept",
       "norm_label": "next",
       "source_file": "package.json",
-      "source_location": "L17"
+      "source_location": "L13"
     },
     {
       "id": "package_scripts",
@@ -1371,7 +1254,7 @@
       "file_type": "code",
       "norm_label": "scripts",
       "source_file": "package.json",
-      "source_location": "L9"
+      "source_location": "L5"
     },
     {
       "id": "package_scripts_build",
@@ -1382,7 +1265,7 @@
       "file_type": "code",
       "norm_label": "build",
       "source_file": "package.json",
-      "source_location": "L11"
+      "source_location": "L7"
     },
     {
       "id": "package_scripts_dev",
@@ -1393,7 +1276,7 @@
       "file_type": "code",
       "norm_label": "dev",
       "source_file": "package.json",
-      "source_location": "L10"
+      "source_location": "L6"
     },
     {
       "id": "package_scripts_start",
@@ -1404,7 +1287,7 @@
       "file_type": "code",
       "norm_label": "start",
       "source_file": "package.json",
-      "source_location": "L12"
+      "source_location": "L8"
     },
     {
       "id": "package_scripts_test",
@@ -1415,7 +1298,7 @@
       "file_type": "code",
       "norm_label": "test",
       "source_file": "package.json",
-      "source_location": "L13"
+      "source_location": "L9"
     },
     {
       "id": "package_scripts_test_e2e",
@@ -1426,7 +1309,7 @@
       "file_type": "code",
       "norm_label": "test:e2e",
       "source_file": "package.json",
-      "source_location": "L14"
+      "source_location": "L10"
     },
     {
       "id": "agents_skills_grilling_skill",
@@ -1549,7 +1432,6 @@
     {
       "id": "app_globals",
       "label": "app_globals",
-      "_origin": "semantic",
       "community": 5,
       "community_name": "layout.tsx",
       "external": true,
@@ -1561,7 +1443,6 @@
     {
       "id": "next_types_root_params_d",
       "label": "next_types_root_params_d",
-      "_origin": "semantic",
       "community": 9,
       "community_name": "next-env.d.ts",
       "external": true,
@@ -1573,7 +1454,6 @@
     {
       "id": "next_types_routes_d",
       "label": "next_types_routes_d",
-      "_origin": "semantic",
       "community": 9,
       "community_name": "next-env.d.ts",
       "external": true,
@@ -2145,7 +2025,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -2157,7 +2037,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -2169,7 +2049,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -2181,7 +2061,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -2193,7 +2073,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -2205,7 +2085,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -2217,7 +2097,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -2229,7 +2109,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -2241,7 +2121,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -2253,7 +2133,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -2265,7 +2145,7 @@
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "package.json",
-      "source_location": "L29",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -3103,7 +2983,18 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L16",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "package_devdependencies",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L17",
       "weight": 1.0
     },
     {
@@ -3119,13 +3010,13 @@
     },
     {
       "source": "package",
-      "target": "package_devdependencies",
+      "target": "package_packagemanager",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L27",
       "weight": 1.0
     },
     {
@@ -3141,17 +3032,6 @@
     },
     {
       "source": "package",
-      "target": "package_packagemanager",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L31",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
       "target": "package_private",
       "relation": "contains",
       "_origin": "ast",
@@ -3163,24 +3043,13 @@
     },
     {
       "source": "package",
-      "target": "package_engines",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
       "target": "package_scripts",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L9",
+      "source_location": "L5",
       "weight": 1.0
     },
     {
@@ -3191,7 +3060,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L17",
+      "source_location": "L13",
       "weight": 1.0
     },
     {
@@ -3202,7 +3071,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L18",
+      "source_location": "L14",
       "weight": 1.0
     },
     {
@@ -3213,7 +3082,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L19",
+      "source_location": "L15",
       "weight": 1.0
     },
     {
@@ -3224,7 +3093,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L22",
+      "source_location": "L18",
       "weight": 1.0
     },
     {
@@ -3235,7 +3104,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L23",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -3246,7 +3115,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L24",
+      "source_location": "L20",
       "weight": 1.0
     },
     {
@@ -3257,7 +3126,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L25",
+      "source_location": "L21",
       "weight": 1.0
     },
     {
@@ -3268,7 +3137,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L26",
+      "source_location": "L22",
       "weight": 1.0
     },
     {
@@ -3279,7 +3148,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L27",
+      "source_location": "L23",
       "weight": 1.0
     },
     {
@@ -3290,7 +3159,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L28",
+      "source_location": "L24",
       "weight": 1.0
     },
     {
@@ -3301,73 +3170,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L29",
-      "weight": 1.0
-    },
-    {
-      "source": "package_engines",
-      "target": "package_engines_node",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "package_engines",
-      "target": "package_engines_pnpm",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L7",
-      "weight": 1.0
-    },
-    {
-      "source": "package_scripts",
-      "target": "package_scripts_dev",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L10",
-      "weight": 1.0
-    },
-    {
-      "source": "package_scripts",
-      "target": "package_scripts_build",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L11",
-      "weight": 1.0
-    },
-    {
-      "source": "package_scripts",
-      "target": "package_scripts_start",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "package_scripts",
-      "target": "package_scripts_test",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L13",
+      "source_location": "L25",
       "weight": 1.0
     },
     {
@@ -3378,7 +3181,51 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L14",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_start",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "package_scripts",
+      "target": "package_scripts_test",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L9",
       "weight": 1.0
     },
     {
@@ -3394,90 +3241,13 @@
     },
     {
       "source": "readme",
-      "target": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
+      "target": "readme_kac_profile",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
       "source_location": "L1",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
-      "target": "readme_\u9ede\u8dd1\u672c\u5730_run_locally",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L12",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
-      "target": "readme_\u9ede_build_\u9ede_test",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L19",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
-      "target": "readme_\u6539\u5b57_editing_copy",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L30",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
-      "target": "readme_\u90e8\u7f72\u53bb_vercel_kac_\u505a_deploy_to_vercel",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L39",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
-      "target": "readme_\u7d50\u69cb_layout",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L49",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
-      "target": "readme_cursor_cloud_environment",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L60",
-      "weight": 1.0
-    },
-    {
-      "source": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
-      "target": "readme_\u79c1\u96b1_privacy",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "README.md",
-      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -3691,5 +3461,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f0c75be6938acada295498433866a841e2186652"
+  "built_at_commit": "b6f3a2a5f177ebf6c9d8958ae475d2ac91a511ee"
 }
