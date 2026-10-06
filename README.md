@@ -68,5 +68,5 @@ run `pnpm dev` ad hoc when you need it.
 
 ## 私隱 / Privacy
 
-呢個 repo 只可以用「KaC」呢個名：no real name, no photo, no email,
+顯示名係「Desmond Cheung」(owner approved 2026-10-05). No photo, no email,
 nothing from futa9's private code, keys or internal data.
