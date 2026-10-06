@@ -1,0 +1,101 @@
+[
+  {
+    "id": 1,
+    "slug": "青花瓷-100d18",
+    "title": "青花瓷",
+    "category": "華語流行",
+    "kind": "song",
+    "summary": "周杰倫中國風經典，方文山詞，收錄於《七里香》",
+    "albumRef": null,
+    "bodyMd": "## 青花瓷\n\n周杰倫 2004 年中國風代表作，方文山填詞。\n\n- 作曲：周杰倫\n- 編曲：鍾興民\n\n天青色等煙雨，而我在等你。",
+    "bodyTruncated": true
+  },
+  {
+    "id": 2,
+    "slug": "東風破-af47f8",
+    "title": "東風破",
+    "category": "華語流行",
+    "kind": "song",
+    "summary": "中國風經典歌曲，收錄於《葉惠美》",
+    "albumRef": "葉惠美",
+    "bodyMd": null,
+    "bodyTruncated": false
+  },
+  {
+    "id": 3,
+    "slug": "七里香-cd2aec",
+    "title": "七里香",
+    "category": "華語流行",
+    "kind": "song",
+    "summary": "周杰倫 2004 年夏日詩篇",
+    "albumRef": null,
+    "bodyMd": null,
+    "bodyTruncated": false
+  },
+  {
+    "id": 4,
+    "slug": "beanie-d3547f",
+    "title": "Beanie",
+    "category": "西方搖滾",
+    "kind": "song",
+    "summary": "Chezile 2024《47》現場版，Neo-Soul 循環",
+    "albumRef": null,
+    "bodyMd": null,
+    "bodyTruncated": false
+  },
+  {
+    "id": 5,
+    "slug": "le-temps-de-l-amour-de7e15",
+    "title": "Le Temps de l'Amour",
+    "category": "西方搖滾",
+    "kind": "song",
+    "summary": "Françoise Hardy 1962 法式冷感 Yé-yé",
+    "albumRef": null,
+    "bodyMd": null,
+    "bodyTruncated": false
+  },
+  {
+    "id": 6,
+    "slug": "hate-it-or-love-it-0698b7",
+    "title": "Hate It or Love It",
+    "category": "電子Hip-Hop",
+    "kind": "song",
+    "summary": "The Game × 50 Cent，2005 東西岸自傳嘻哈",
+    "albumRef": null,
+    "bodyMd": null,
+    "bodyTruncated": false
+  },
+  {
+    "id": 7,
+    "slug": "turn-the-lights-off-f90681",
+    "title": "Turn The Lights Off",
+    "category": "電子Hip-Hop",
+    "kind": "song",
+    "summary": "Kato feat. Jon 2010 舞曲經典 Deep House 重混",
+    "albumRef": null,
+    "bodyMd": null,
+    "bodyTruncated": false
+  },
+  {
+    "id": 8,
+    "slug": "專訪-莫文蔚細訴5首廣東舊歌的故事-ed9438",
+    "title": "專訪·莫文蔚細訴5首廣東舊歌的故事",
+    "category": "參考資料",
+    "kind": "interview",
+    "summary": "游大東 HK01 專訪，莫文蔚談廣東舊歌與 2021 演唱會",
+    "albumRef": null,
+    "bodyMd": null,
+    "bodyTruncated": false
+  },
+  {
+    "id": 9,
+    "slug": "00-index-西方搖滾-ec97c1",
+    "title": "00.index.西方搖滾",
+    "category": "分冊目錄",
+    "kind": "index",
+    "summary": "西方搖滾獨立目錄（樂團／專輯／歌曲／人物／器材／概念）",
+    "albumRef": null,
+    "bodyMd": null,
+    "bodyTruncated": false
+  }
+]
