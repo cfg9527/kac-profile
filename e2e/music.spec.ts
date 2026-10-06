@@ -7,10 +7,10 @@ test.beforeEach(async ({ page }) => {
 test("music section renders grouped categories", async ({ page }) => {
   const section = page.getByTestId("music-section");
   await expect(section).toBeVisible();
-  await expect(section.getByText("華語流行")).toBeVisible();
-  await expect(section.getByText("西方搖滾")).toBeVisible();
-  await expect(section.getByText("電子Hip-Hop")).toBeVisible();
-  await expect(section.getByText("參考資料")).toBeVisible();
+  await expect(section.getByRole("heading", { name: "華語流行" })).toBeVisible();
+  await expect(section.getByRole("heading", { name: "西方搖滾" })).toBeVisible();
+  await expect(section.getByRole("heading", { name: "電子Hip-Hop" })).toBeVisible();
+  await expect(section.getByRole("heading", { name: "參考資料" })).toBeVisible();
   await expect(page.getByTestId("music-item-青花瓷-100d18")).toBeVisible();
 });
 
@@ -51,9 +51,10 @@ test("recommender keyboard flow shows picks, Esc closes and focus returns", asyn
 test("recommender mocked states show friendly messages", async ({ page }) => {
   const input = page.getByTestId("recommender-input");
   const submit = page.getByTestId("recommender-submit");
+  const dialog = page.getByTestId("recommend-dialog");
 
   await page.route("**/api/recommend", async (route) => {
-    await new Promise((r) => setTimeout(r, 400));
+    await new Promise((r) => setTimeout(r, 500));
     await route.fulfill({
       status: 200,
       contentType: "application/json",
@@ -65,9 +66,10 @@ test("recommender mocked states show friendly messages", async ({ page }) => {
   });
   await input.fill("test loading");
   await submit.click();
-  await expect(page.getByText("諗緊")).toBeVisible();
-  await expect(page.getByTestId("recommend-dialog")).toBeVisible({ timeout: 8000 });
+  await expect(dialog.getByText("諗緊")).toBeVisible();
+  await expect(dialog.getByText("X")).toBeVisible({ timeout: 8000 });
   await page.keyboard.press("Escape");
+  await expect(dialog).toBeHidden();
 
   await page.unroute("**/api/recommend");
   await page.route("**/api/recommend", async (route) => {
@@ -79,7 +81,9 @@ test("recommender mocked states show friendly messages", async ({ page }) => {
   });
   await input.fill("again");
   await submit.click();
-  await expect(page.getByTestId("recommend-dialog").getByText("太多")).toBeVisible();
+  await expect(dialog.getByText("太多")).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(dialog).toBeHidden();
 
   await page.unroute("**/api/recommend");
   await page.route("**/api/recommend", async (route) => {
@@ -91,7 +95,9 @@ test("recommender mocked states show friendly messages", async ({ page }) => {
   });
   await input.fill("again2");
   await submit.click();
-  await expect(page.getByTestId("recommend-dialog").getByText("額度用晒")).toBeVisible();
+  await expect(dialog.getByText("額度用晒")).toBeVisible();
+  await page.keyboard.press("Escape");
+  await expect(dialog).toBeHidden();
 
   await page.unroute("**/api/recommend");
   await page.route("**/api/recommend", async (route) => {
@@ -103,7 +109,7 @@ test("recommender mocked states show friendly messages", async ({ page }) => {
   });
   await input.fill("again3");
   await submit.click();
-  await expect(page.getByTestId("recommend-dialog").getByText("暫時用唔到")).toBeVisible();
+  await expect(dialog.getByText("暫時用唔到")).toBeVisible();
 });
 
 test("recommender sits at bottom with label and counter", async ({ page }) => {

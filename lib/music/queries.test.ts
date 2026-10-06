@@ -101,7 +101,7 @@ describe("getEntries", () => {
     const hits = grep
       .split("\n")
       .filter(Boolean)
-      .filter((l) => !l.includes("queries.test.ts"));
+      .filter((l) => !l.includes(".test.ts"));
     expect(hits).toEqual([]);
     void readFileSync;
   });

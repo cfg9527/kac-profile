@@ -5,10 +5,13 @@ export default defineConfig({
   fullyParallel: true,
   retries: 1,
   webServer: {
-    command: "npx --yes serve@14 out -l 3100",
+    command: "pnpm exec next start -p 3100",
     url: "http://localhost:3100",
     reuseExistingServer: true,
     timeout: 120_000,
+    env: {
+      MUSIC_DATA_FIXTURE: "e2e/fixtures/entries.json",
+    },
   },
   projects: [
     { name: "desktop", use: { ...devices["Desktop Chrome"], baseURL: "http://localhost:3100" } },
