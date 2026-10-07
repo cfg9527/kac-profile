@@ -89,7 +89,7 @@ describe("KPP-4 ontology validator (contract-first)", () => {
   it("7. CLI exit 0 on fixture 1, exit 1 on fixture 3", () => {
     const okCmd = `pnpm ontology:validate ${path.join(FIX, "normal.ontology.json")} ${path.join(FIX, "normal.body.md")} ${path.join(FIX, "normal.lyrics.md")}`;
     const okOut = execSync(okCmd, { encoding: "utf8" });
-    expect(JSON.parse(okOut).ok).toBe(true);
+    expect(JSON.parse(okOut.slice(okOut.indexOf("{"))).ok).toBe(true);
 
     const badCmd = `pnpm ontology:validate ${path.join(FIX, "invalid.ontology.json")} ${path.join(FIX, "normal.body.md")}`;
     let failed = false;
