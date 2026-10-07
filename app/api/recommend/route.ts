@@ -1,6 +1,6 @@
 import { NextResponse } from "next/server";
 import { generateText, Output, gateway } from "ai";
-import { buildRecommendPrompt, buildRecommendSchema } from "@/lib/music/recommend";
+import { buildRecommendPrompt, buildRecommendSchema, clampReason } from "@/lib/music/recommend";
 import { SHORTLIST_LIMIT, shortlistCandidates } from "@/lib/music/shortlist";
 import type { RecommendErrorCode } from "@/lib/music/types";
 
@@ -195,7 +195,7 @@ export async function POST(request: Request) {
       slug: hit.slug,
       title: hit.title,
       category: hit.category,
-      reason: String(p.reason ?? "").slice(0, 120),
+      reason: clampReason(p.reason),
     });
     if (picks.length >= 3) break;
   }

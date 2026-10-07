@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-/* Pixel Garden visual tokens (recreated for kac-profile).
- * Look: Nunito + CJK fallbacks, cream cards, 3px ink borders,
- * hard offset shadows (no blur), playful press/hover motion. */
+/* Dream pixel night-sea tokens (mirrors lib/theme/tokens.ts DREAM_COLORS).
+ * Look: deep blue/purple night banding into magenta and orange-red,
+ * glowing-teal sea, moonlit text on opaque plates. */
 @theme {
   --font-sans: "Nunito", "PingFang HK", "PingFang TC", "Microsoft JhengHei",
     "Noto Sans TC", system-ui, sans-serif;
@@ -22,34 +22,66 @@
   --color-pg-bark: #8a5a3b;
 }
 
+:root {
+  --color-dn-night: #0b1030;
+  --color-dn-deep: #141a45;
+  --color-dn-panel: #1e2454;
+  --color-dn-violet: #9d7bff;
+  --color-dn-magenta: #e86fd0;
+  --color-dn-ember: #ff5a3c;
+  --color-dn-dusk: #ffb35c;
+  --color-dn-glow-teal: #4de3c2;
+  --color-dn-foam: #fff3d6;
+  --color-dn-moon: #f6f2e7;
+  --color-dn-mist: #c9d4e8;
+  --color-dn-ink: #10142b;
+}
+
 html {
   scroll-behavior: smooth;
 }
 
 body {
-  background: var(--color-pg-sky);
-  color: var(--color-pg-ink);
+  background: var(--color-dn-night);
+  color: var(--color-dn-moon);
+  overflow-x: clip;
 }
 
-/* ---- Pixel Garden card: cream, 3px ink border, hard shadow ---- */
+/* ---- Night-sea card: opaque panel, moon text, pixel border + hard shadow ---- */
 .pg-card {
-  background: var(--color-pg-cream);
-  border: 3px solid var(--color-pg-ink);
+  background: var(--color-dn-panel);
+  color: var(--color-dn-moon);
+  border: 3px solid var(--color-dn-violet);
   border-radius: 16px;
-  box-shadow: 6px 6px 0 var(--color-pg-ink);
+  box-shadow: 6px 6px 0 var(--color-dn-violet);
 }
 
-/* ---- Pixel Garden button ---- */
+/* ---- Opaque plate for footer / small text blocks ---- */
+.dn-plate {
+  background: var(--color-dn-panel);
+  color: var(--color-dn-moon);
+  border: 3px solid var(--color-dn-violet);
+  border-radius: 16px;
+  box-shadow: 6px 6px 0 var(--color-dn-violet);
+}
+
+/* ---- Links on opaque plates: glowing teal ---- */
+.pg-card a,
+.dn-plate a {
+  color: var(--color-dn-glow-teal);
+}
+
+/* ---- Night-sea button: glow-teal sea, ink text ---- */
 .pg-btn {
   display: inline-flex;
   align-items: center;
   justify-content: center;
   gap: 0.4rem;
-  background: var(--color-pg-yellow);
-  color: var(--color-pg-ink);
-  border: 3px solid var(--color-pg-ink);
+  background: var(--color-dn-glow-teal);
+  color: var(--color-dn-ink);
+  border: 3px solid var(--color-dn-violet);
   border-radius: 12px;
-  box-shadow: 4px 4px 0 var(--color-pg-ink);
+  box-shadow: 4px 4px 0 var(--color-dn-violet);
   font-weight: 800;
   padding: 0.5rem 1rem;
   cursor: pointer;
@@ -59,32 +91,49 @@ body {
 }
 .pg-btn:hover {
   transform: translate(-1px, -1px);
-  box-shadow: 5px 5px 0 var(--color-pg-ink);
+  box-shadow: 5px 5px 0 var(--color-dn-violet);
 }
 .pg-btn:active {
   transform: translate(3px, 3px);
-  box-shadow: 1px 1px 0 var(--color-pg-ink);
+  box-shadow: 1px 1px 0 var(--color-dn-violet);
 }
 .pg-btn--pink {
-  background: var(--color-pg-pink);
+  background: var(--color-dn-dusk);
 }
 .pg-btn--cream {
-  background: var(--color-pg-cream);
+  background: var(--color-dn-foam);
 }
 .pg-btn--grass {
-  background: var(--color-pg-grass);
+  background: var(--color-dn-glow-teal);
 }
 
-/* ---- small tag chip ---- */
+/* ---- small tag chip: warm dusk, ink text ---- */
 .pg-chip {
   display: inline-block;
-  background: var(--color-pg-pink);
-  border: 3px solid var(--color-pg-ink);
+  background: var(--color-dn-dusk);
+  color: var(--color-dn-ink);
+  border: 3px solid var(--color-dn-violet);
   border-radius: 999px;
-  box-shadow: 3px 3px 0 var(--color-pg-ink);
+  box-shadow: 3px 3px 0 var(--color-dn-violet);
   font-weight: 800;
   font-size: 0.8rem;
   padding: 0.1rem 0.7rem;
+}
+
+/* ---- night-sea input + list rows: deep sea surface, moon text ---- */
+.dn-input {
+  background: var(--color-dn-deep);
+  color: var(--color-dn-moon);
+  border: 3px solid var(--color-dn-violet);
+}
+.dn-input::placeholder {
+  color: var(--color-dn-mist);
+  opacity: 1;
+}
+.dn-row {
+  background: var(--color-dn-deep);
+  color: var(--color-dn-moon);
+  border: 3px solid var(--color-dn-violet);
 }
 
 /* crisp pixels for SVG sprite art */
@@ -93,11 +142,11 @@ body {
   image-rendering: pixelated;
 }
 
-/* park ground checker */
+/* moonlit shore ground */
 .pg-ground {
-  background-color: var(--color-pg-grass);
+  background-color: var(--color-dn-deep);
   background-image: repeating-conic-gradient(
-    rgba(255, 255, 255, 0.08) 0% 25%,
+    rgba(77, 227, 194, 0.07) 0% 25%,
     transparent 0% 50%
   );
   background-size: 48px 48px;
@@ -125,7 +174,7 @@ body {
   }
 }
 .pg-cloud {
-  animation: pg-drift 38s linear infinite;
+  animation: pg-drift 38s steps(60) infinite;
 }
 
 @keyframes pg-pop-in {
@@ -142,16 +191,84 @@ body {
   animation: pg-pop-in 160ms steps(4) both;
 }
 
+@keyframes dn-twinkle {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.25;
+  }
+}
+.dn-twinkle {
+  display: block;
+  background: var(--color-dn-foam);
+  box-shadow: 0 0 6px var(--color-dn-foam);
+  animation: dn-twinkle 2.4s steps(3) infinite;
+}
+
+@keyframes dn-glint {
+  0%,
+  100% {
+    opacity: 0.35;
+    transform: scaleX(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scaleX(1.6);
+  }
+}
+.dn-glint {
+  display: block;
+  height: 4px;
+  background: var(--color-dn-glow-teal);
+  box-shadow: 0 0 8px var(--color-dn-glow-teal);
+  animation: dn-glint 3.2s steps(4) infinite;
+}
+
+@keyframes dn-shoot {
+  0% {
+    opacity: 0;
+    transform: translate(0, 0);
+  }
+  8% {
+    opacity: 1;
+  }
+  45% {
+    opacity: 1;
+    transform: translate(-160px, 80px);
+  }
+  55%,
+  100% {
+    opacity: 0;
+    transform: translate(-180px, 90px);
+  }
+}
+.dn-shooting-star {
+  display: block;
+  background: linear-gradient(
+    to left,
+    var(--color-dn-foam),
+    var(--color-dn-glow-teal) 60%,
+    transparent
+  );
+  box-shadow: 0 0 8px var(--color-dn-foam);
+  animation: dn-shoot 7s steps(14) infinite;
+}
+
 /* visible keyboard focus everywhere */
 :focus-visible {
-  outline: 3px dashed var(--color-pg-ink);
+  outline: 3px dashed var(--color-dn-glow-teal);
   outline-offset: 3px;
 }
 
 @media (prefers-reduced-motion: reduce) {
   .pg-bob,
   .pg-cloud,
-  .pg-pop-in {
+  .pg-pop-in,
+  .dn-twinkle,
+  .dn-glint,
+  .dn-shooting-star {
     animation: none;
   }
   html {

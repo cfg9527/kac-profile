@@ -11,7 +11,7 @@ const nunito = Nunito({
 export const metadata: Metadata = {
   title: "Desmond Cheung 嘅像素公園 | Desmond Cheung's Pixel Park",
   description:
-    "Desmond Cheung 的個人自我介紹小公園：像素散步，㩒物件睇介紹。A tiny pixel park intro page for Desmond Cheung.",
+    "Desmond Cheung 的夜海像素小公園：星光落海，鯨魚翻身，散步㩒物件睇介紹。A dreamlike night-sea pixel park intro page for Desmond Cheung.",
 };
 
 export default function RootLayout({
