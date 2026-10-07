@@ -84,7 +84,7 @@ export const siteContent: Record<Lang, SiteCopy> = {
     githubLabel: "GitHub",
     xLabel: "X",
     xPlaceholderNote: "（X 帳號待 Desmond Cheung 填寫）",
-    footerNote: "Desmond Cheung 用像素起嘅小公園 · 純靜態，冇後端",
+    footerNote: "Desmond Cheung 用像素起嘅小公園",
     sections: {
       intro: {
         tabLabel: "自我介紹",
@@ -141,7 +141,7 @@ export const siteContent: Record<Lang, SiteCopy> = {
     githubLabel: "GitHub",
     xLabel: "X",
     xPlaceholderNote: "(X handle to be filled in by Desmond Cheung)",
-    footerNote: "A tiny pixel park built by Desmond Cheung · fully static, no backend",
+    footerNote: "A tiny pixel park built by Desmond Cheung",
     sections: {
       intro: {
         tabLabel: "Intro",

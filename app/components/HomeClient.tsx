@@ -3,7 +3,6 @@
 import { useCallback, useEffect, useState } from "react";
 import ParkScene from "./ParkScene";
 import SectionPopup from "./SectionPopup";
-import MusicSection from "./MusicSection";
 import Recommender from "./Recommender";
 import {
   LANG_STORAGE_KEY,
@@ -12,9 +11,8 @@ import {
   type Lang,
   type SectionId,
 } from "@/content/site";
-import type { Entry } from "@/lib/music/types";
 
-export default function HomeClient({ entries }: { entries: Entry[] }) {
+export default function HomeClient() {
   const [lang, setLang] = useState<Lang>("zh");
   const [active, setActive] = useState<SectionId | null>(null);
   const copy = siteContent[lang];
@@ -79,8 +77,6 @@ export default function HomeClient({ entries }: { entries: Entry[] }) {
       <ParkScene copy={copy} onOpen={open} />
 
       <p className="pg-card p-3 text-sm font-bold">{copy.parkHint}</p>
-
-      <MusicSection entries={entries} />
 
       <Recommender />
 
