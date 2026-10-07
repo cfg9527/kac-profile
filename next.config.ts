@@ -1,10 +1,8 @@
 import type { NextConfig } from "next";
 
-// Static export: pure static HTML/CSS/JS, deployable on Vercel free Hobby
-// (or any static host) with no server required.
-const nextConfig: NextConfig = {
-  output: "export",
-  images: { unoptimized: true },
-};
+// Normal Next.js app on Vercel (Node.js runtime). The home page is still
+// statically generated (force-static, Neon read at build time); only
+// POST /api/recommend runs per request.
+const nextConfig: NextConfig = {};
 
 export default nextConfig;

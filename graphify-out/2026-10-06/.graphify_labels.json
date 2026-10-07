@@ -1,17 +1,14 @@
 {
   "0": "ParkScene.tsx",
-  "1": "HomeClient.tsx",
+  "1": "site.ts",
   "2": "package.json",
   "3": "compilerOptions",
   "4": "devDependencies",
   "5": "layout.tsx",
-  "6": "queries.ts",
+  "6": "scripts",
   "7": "Grilling — design review before building",
   "8": "Grill round 1 — kac-profile v1 (approved by KaC, 2026-10-03)",
   "9": "next-env.d.ts",
   "10": "postcss.config.mjs",
-  "11": "KaC 嘅像素公園 · KaC's Pixel Park",
-  "12": "types.ts",
-  "13": "route.ts",
-  "14": "dependencies"
+  "11": "KaC 嘅像素公園 · KaC's Pixel Park"
 }

@@ -96,11 +96,11 @@ describe("contact + privacy", () => {
     }
   });
 
-  it("only ever calls the owner KaC (no other personal names in titles)", () => {
+  it("calls the owner Desmond Cheung in titles", () => {
     for (const lang of LANGS) {
       const c = siteContent[lang];
-      expect(c.pageTitle).toMatch(/KaC/);
-      expect(c.sections.intro.title).toMatch(/KaC/);
+      expect(c.pageTitle).toMatch(/Desmond Cheung/);
+      expect(c.sections.intro.title).toMatch(/Desmond Cheung/);
     }
   });
 });

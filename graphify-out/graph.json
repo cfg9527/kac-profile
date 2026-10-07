@@ -62,7 +62,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "props",
       "source_file": "app/components/ParkScene.tsx",
@@ -75,7 +75,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "props",
       "source_file": "app/components/SectionPopup.tsx",
@@ -88,7 +88,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "lang",
       "source_file": "content/site.ts",
@@ -101,7 +101,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "projectitem",
       "source_file": "content/site.ts",
@@ -114,7 +114,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "sectioncopy",
       "source_file": "content/site.ts",
@@ -127,7 +127,7 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "sectionid",
       "source_file": "content/site.ts",
@@ -140,11 +140,141 @@
       "_callable_class": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "sitecopy",
       "source_file": "content/site.ts",
       "source_location": "L59"
+    },
+    {
+      "id": "app_components_recommender_status",
+      "label": "Status",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "status",
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "lib_music_recommend_candidate",
+      "label": "Candidate",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "candidate",
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "lib_music_types_category",
+      "label": "Category",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "category",
+      "source_file": "lib/music/types.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_music_types_entry",
+      "label": "Entry",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "entry",
+      "source_file": "lib/music/types.ts",
+      "source_location": "L3"
+    },
+    {
+      "id": "lib_music_types_kind",
+      "label": "Kind",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "kind",
+      "source_file": "lib/music/types.ts",
+      "source_location": "L2"
+    },
+    {
+      "id": "lib_music_types_pick",
+      "label": "Pick",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "pick",
+      "source_file": "lib/music/types.ts",
+      "source_location": "L17"
+    },
+    {
+      "id": "lib_music_types_recommenderrorcode",
+      "label": "RecommendErrorCode",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "recommenderrorcode",
+      "source_file": "lib/music/types.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "lib_music_types_recommendrequest",
+      "label": "RecommendRequest",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "recommendrequest",
+      "source_file": "lib/music/types.ts",
+      "source_location": "L14"
+    },
+    {
+      "id": "lib_music_types_recommendresponse",
+      "label": "RecommendResponse",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "recommendresponse",
+      "source_file": "lib/music/types.ts",
+      "source_location": "L31"
+    },
+    {
+      "id": "lib_music_queries_entryrow",
+      "label": "EntryRow",
+      "_callable": true,
+      "_callable_class": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "entryrow",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L14"
     },
     {
       "id": "app_components_parkscene_adjacentfreetile",
@@ -212,23 +342,143 @@
       "_callable": true,
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "sectionpopup()",
       "source_file": "app/components/SectionPopup.tsx",
       "source_location": "L19"
     },
     {
-      "id": "app_page_home",
-      "label": "Home()",
+      "id": "app_components_musicsection_entrypopup",
+      "label": "EntryPopup()",
       "_callable": true,
       "_origin": "ast",
-      "community": 1,
-      "community_name": "site.ts",
+      "community": 12,
+      "community_name": "types.ts",
       "file_type": "code",
-      "norm_label": "home()",
-      "source_file": "app/page.tsx",
-      "source_location": "L14"
+      "norm_label": "entrypopup()",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L65"
+    },
+    {
+      "id": "app_components_musicsection_musicsection",
+      "label": "MusicSection()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "musicsection()",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L10"
+    },
+    {
+      "id": "lib_music_queries_checkandcountusage",
+      "label": "checkAndCountUsage()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "checkandcountusage()",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L115"
+    },
+    {
+      "id": "lib_music_recommend_buildcandidatecontext",
+      "label": "buildCandidateContext()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "buildcandidatecontext()",
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L10"
+    },
+    {
+      "id": "lib_music_recommend_buildrecommendprompt",
+      "label": "buildRecommendPrompt()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "buildrecommendprompt()",
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L16"
+    },
+    {
+      "id": "lib_music_recommend_stripwiki",
+      "label": "stripWiki()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "stripwiki()",
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L20"
+    },
+    {
+      "id": "app_api_recommend_route_classifygatewayerror",
+      "label": "classifyGatewayError()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "classifygatewayerror()",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L61"
+    },
+    {
+      "id": "app_api_recommend_route_collecthaystack",
+      "label": "collectHaystack()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "collecthaystack()",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L11"
+    },
+    {
+      "id": "app_api_recommend_route_err",
+      "label": "err()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "err()",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L7"
+    },
+    {
+      "id": "app_api_recommend_route_post",
+      "label": "POST()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "post()",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L77"
+    },
+    {
+      "id": "app_api_recommend_route_test_req",
+      "label": "req()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "req()",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L26"
     },
     {
       "id": "app_layout_rootlayout",
@@ -241,6 +491,174 @@
       "norm_label": "rootlayout()",
       "source_file": "app/layout.tsx",
       "source_location": "L17"
+    },
+    {
+      "id": "app_components_homeclient_homeclient",
+      "label": "HomeClient()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "homeclient()",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L17"
+    },
+    {
+      "id": "app_components_recommender_recommender",
+      "label": "Recommender()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "recommender()",
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L22"
+    },
+    {
+      "id": "app_components_recommender_recommender_submit",
+      "label": "submit()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "submit()",
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L47"
+    },
+    {
+      "id": "app_page_home",
+      "label": "Home()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "home()",
+      "source_file": "app/page.tsx",
+      "source_location": "L6"
+    },
+    {
+      "id": "lib_music_queries_getclientip",
+      "label": "getClientIp()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "getclientip()",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L131"
+    },
+    {
+      "id": "lib_music_queries_getdayhk",
+      "label": "getDayHK()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "getdayhk()",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L106"
+    },
+    {
+      "id": "lib_music_queries_getentries",
+      "label": "getEntries()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "getentries()",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L64"
+    },
+    {
+      "id": "lib_music_queries_getsongcandidates",
+      "label": "getSongCandidates()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "getsongcandidates()",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L77"
+    },
+    {
+      "id": "lib_music_queries_maprow",
+      "label": "mapRow()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "maprow()",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L26"
+    },
+    {
+      "id": "lib_music_queries_readfixture",
+      "label": "readFixture()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "readfixture()",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L48"
+    },
+    {
+      "id": "lib_music_queries_test_capturedsql",
+      "label": "capturedSql()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "capturedsql()",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L19"
+    },
+    {
+      "id": "lib_music_queries_test_sqltext",
+      "label": "sqlText()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "sqltext()",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L13"
+    },
+    {
+      "id": "lib_music_queries_usefixture",
+      "label": "useFixture()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "usefixture()",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L40"
+    },
+    {
+      "id": "lib_music_queries_visitorhash",
+      "label": "visitorHash()",
+      "_callable": true,
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "visitorhash()",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L102"
     },
     {
       "id": "app_components_parkscene",
@@ -441,25 +859,25 @@
       "source_location": "L106"
     },
     {
+      "id": "app_components_homeclient",
+      "label": "HomeClient.tsx",
+      "_origin": "ast",
+      "community": 1,
+      "community_name": "HomeClient.tsx",
+      "file_type": "code",
+      "norm_label": "homeclient.tsx",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L1"
+    },
+    {
       "id": "app_components_sectionpopup",
       "label": "SectionPopup.tsx",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "sectionpopup.tsx",
       "source_file": "app/components/SectionPopup.tsx",
-      "source_location": "L1"
-    },
-    {
-      "id": "app_page",
-      "label": "page.tsx",
-      "_origin": "ast",
-      "community": 1,
-      "community_name": "site.ts",
-      "file_type": "code",
-      "norm_label": "page.tsx",
-      "source_file": "app/page.tsx",
       "source_location": "L1"
     },
     {
@@ -467,7 +885,7 @@
       "label": "site.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "site.ts",
       "source_file": "content/site.ts",
@@ -478,7 +896,7 @@
       "label": "GITHUB_URL",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "github_url",
       "source_file": "content/site.ts",
@@ -489,7 +907,7 @@
       "label": "LANG_STORAGE_KEY",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "lang_storage_key",
       "source_file": "content/site.ts",
@@ -500,7 +918,7 @@
       "label": "OBJECT_SECTION_MAP",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "object_section_map",
       "source_file": "content/site.ts",
@@ -511,7 +929,7 @@
       "label": "PARK_OBJECT_IDS",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "park_object_ids",
       "source_file": "content/site.ts",
@@ -522,7 +940,7 @@
       "label": "SECTION_IDS",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "section_ids",
       "source_file": "content/site.ts",
@@ -533,7 +951,7 @@
       "label": "siteContent",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "sitecontent",
       "source_file": "content/site.ts",
@@ -544,7 +962,7 @@
       "label": "site.test.ts",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "site.test.ts",
       "source_file": "content/site.test.ts",
@@ -555,7 +973,7 @@
       "label": "LANGS",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "langs",
       "source_file": "content/site.test.ts",
@@ -566,7 +984,7 @@
       "label": "X_HANDLE",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "x_handle",
       "source_file": "content/site.ts",
@@ -577,7 +995,7 @@
       "label": "X_HANDLE_IS_PLACEHOLDER",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "code",
       "norm_label": "x_handle_is_placeholder",
       "source_file": "content/site.ts",
@@ -588,11 +1006,11 @@
       "label": "react",
       "_origin": "ast",
       "community": 1,
-      "community_name": "site.ts",
+      "community_name": "HomeClient.tsx",
       "file_type": "concept",
       "norm_label": "react",
       "source_file": "package.json",
-      "source_location": "L18"
+      "source_location": "L21"
     },
     {
       "id": "postcss_config",
@@ -638,7 +1056,7 @@
       "node_kind": "heading",
       "norm_label": "cursor cloud environment",
       "source_file": "README.md",
-      "source_location": "L60"
+      "source_location": "L69"
     },
     {
       "id": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
@@ -662,7 +1080,7 @@
       "node_kind": "heading",
       "norm_label": "\u6539\u5b57 / editing copy",
       "source_file": "README.md",
-      "source_location": "L30"
+      "source_location": "L31"
     },
     {
       "id": "readme_\u79c1\u96b1_privacy",
@@ -674,19 +1092,7 @@
       "node_kind": "heading",
       "norm_label": "\u79c1\u96b1 / privacy",
       "source_file": "README.md",
-      "source_location": "L69"
-    },
-    {
-      "id": "readme_\u7d50\u69cb_layout",
-      "label": "\u7d50\u69cb / Layout",
-      "_origin": "ast",
-      "community": 11,
-      "community_name": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
-      "file_type": "document",
-      "node_kind": "heading",
-      "norm_label": "\u7d50\u69cb / layout",
-      "source_file": "README.md",
-      "source_location": "L49"
+      "source_location": "L78"
     },
     {
       "id": "readme_\u90e8\u7f72\u53bb_vercel_kac_\u505a_deploy_to_vercel",
@@ -698,7 +1104,19 @@
       "node_kind": "heading",
       "norm_label": "\u90e8\u7f72\u53bb vercel(kac \u505a)/ deploy to vercel",
       "source_file": "README.md",
-      "source_location": "L39"
+      "source_location": "L40"
+    },
+    {
+      "id": "readme_\u97f3\u6a02_\u63a8\u4ecb_\u74b0\u5883\u8b8a\u6578_env_vars",
+      "label": "\u97f3\u6a02\uff0b\u63a8\u4ecb\uff1a\u74b0\u5883\u8b8a\u6578 / Env vars",
+      "_origin": "ast",
+      "community": 11,
+      "community_name": "KaC \u5605\u50cf\u7d20\u516c\u5712 \u00b7 KaC's Pixel Park",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u97f3\u6a02+\u63a8\u4ecb:\u74b0\u5883\u8b8a\u6578 / env vars",
+      "source_file": "README.md",
+      "source_location": "L83"
     },
     {
       "id": "readme_\u9ede_build_\u9ede_test",
@@ -725,6 +1143,326 @@
       "source_location": "L12"
     },
     {
+      "id": "app_components_musicsection",
+      "label": "MusicSection.tsx",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "musicsection.tsx",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_musicsection_order",
+      "label": "ORDER",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "order",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L8"
+    },
+    {
+      "id": "app_components_recommender",
+      "label": "Recommender.tsx",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "recommender.tsx",
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_components_recommender_fallback",
+      "label": "FALLBACK",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "fallback",
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L12"
+    },
+    {
+      "id": "lib_music_recommend",
+      "label": "recommend.ts",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "recommend.ts",
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_music_recommend_recommend_system",
+      "label": "RECOMMEND_SYSTEM",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "recommend_system",
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "lib_music_types",
+      "label": "types.ts",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "code",
+      "norm_label": "types.ts",
+      "source_file": "lib/music/types.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "ref_react_markdown",
+      "label": "react-markdown",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "concept",
+      "norm_label": "react-markdown",
+      "source_file": "package.json",
+      "source_location": "L23"
+    },
+    {
+      "id": "readme_\u7d50\u69cb_layout",
+      "label": "\u7d50\u69cb / Layout",
+      "_origin": "ast",
+      "community": 12,
+      "community_name": "types.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u7d50\u69cb / layout",
+      "source_file": "README.md",
+      "source_location": "L50"
+    },
+    {
+      "id": "app_api_recommend_route",
+      "label": "route.ts",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "route.ts",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_api_recommend_route_test",
+      "label": "route.test.ts",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "route.test.ts",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_api_recommend_route_test_candidates",
+      "label": "CANDIDATES",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "candidates",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L37"
+    },
+    {
+      "id": "app_api_recommend_route_test_mockcandidates",
+      "label": "mockCandidates",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "mockcandidates",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L23"
+    },
+    {
+      "id": "app_api_recommend_route_test_mockgenerate",
+      "label": "mockGenerate",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "mockgenerate",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L22"
+    },
+    {
+      "id": "app_api_recommend_route_test_mockusage",
+      "label": "mockUsage",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "mockusage",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L24"
+    },
+    {
+      "id": "vitest_config",
+      "label": "vitest.config.ts",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "code",
+      "norm_label": "vitest.config.ts",
+      "source_file": "vitest.config.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "ref_ai",
+      "label": "ai",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "concept",
+      "norm_label": "ai",
+      "source_file": "package.json",
+      "source_location": "L19"
+    },
+    {
+      "id": "ref_vitest",
+      "label": "vitest",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "concept",
+      "norm_label": "vitest",
+      "source_file": "package.json",
+      "source_location": "L34"
+    },
+    {
+      "id": "ref_zod",
+      "label": "zod",
+      "_origin": "ast",
+      "community": 13,
+      "community_name": "route.ts",
+      "file_type": "concept",
+      "norm_label": "zod",
+      "source_file": "package.json",
+      "source_location": "L24"
+    },
+    {
+      "id": "package_dependencies",
+      "label": "dependencies",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "dependencies",
+      "source_file": "package.json",
+      "source_location": "L16"
+    },
+    {
+      "id": "package_dependencies_ai",
+      "label": "ai",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "ai",
+      "source_file": "package.json",
+      "source_location": "L19"
+    },
+    {
+      "id": "package_dependencies_neondatabase_serverless",
+      "label": "@neondatabase/serverless",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "@neondatabase/serverless",
+      "source_file": "package.json",
+      "source_location": "L17"
+    },
+    {
+      "id": "package_dependencies_next",
+      "label": "next",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "next",
+      "source_file": "package.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "package_dependencies_react",
+      "label": "react",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "react",
+      "source_file": "package.json",
+      "source_location": "L21"
+    },
+    {
+      "id": "package_dependencies_react_dom",
+      "label": "react-dom",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "react-dom",
+      "source_file": "package.json",
+      "source_location": "L22"
+    },
+    {
+      "id": "package_dependencies_react_markdown",
+      "label": "react-markdown",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "react-markdown",
+      "source_file": "package.json",
+      "source_location": "L23"
+    },
+    {
+      "id": "package_dependencies_vercel_functions",
+      "label": "@vercel/functions",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "@vercel/functions",
+      "source_file": "package.json",
+      "source_location": "L18"
+    },
+    {
+      "id": "package_dependencies_zod",
+      "label": "zod",
+      "_origin": "ast",
+      "community": 14,
+      "community_name": "dependencies",
+      "file_type": "code",
+      "norm_label": "zod",
+      "source_file": "package.json",
+      "source_location": "L24"
+    },
+    {
+      "id": "e2e_music_spec",
+      "label": "music.spec.ts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "music.spec.ts",
+      "source_file": "e2e/music.spec.ts",
+      "source_location": "L1"
+    },
+    {
       "id": "e2e_park_spec",
       "label": "park.spec.ts",
       "_origin": "ast",
@@ -745,50 +1483,6 @@
       "norm_label": "package.json",
       "source_file": "package.json",
       "source_location": "L1"
-    },
-    {
-      "id": "package_dependencies",
-      "label": "dependencies",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "dependencies",
-      "source_file": "package.json",
-      "source_location": "L16"
-    },
-    {
-      "id": "package_dependencies_next",
-      "label": "next",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "next",
-      "source_file": "package.json",
-      "source_location": "L17"
-    },
-    {
-      "id": "package_dependencies_react",
-      "label": "react",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "react",
-      "source_file": "package.json",
-      "source_location": "L18"
-    },
-    {
-      "id": "package_dependencies_react_dom",
-      "label": "react-dom",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "react-dom",
-      "source_file": "package.json",
-      "source_location": "L19"
     },
     {
       "id": "package_engines",
@@ -843,7 +1537,7 @@
       "file_type": "code",
       "norm_label": "packagemanager",
       "source_file": "package.json",
-      "source_location": "L31"
+      "source_location": "L36"
     },
     {
       "id": "package_private",
@@ -855,6 +1549,72 @@
       "norm_label": "private",
       "source_file": "package.json",
       "source_location": "L4"
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "scripts",
+      "source_file": "package.json",
+      "source_location": "L9"
+    },
+    {
+      "id": "package_scripts_build",
+      "label": "build",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "build",
+      "source_file": "package.json",
+      "source_location": "L11"
+    },
+    {
+      "id": "package_scripts_dev",
+      "label": "dev",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "dev",
+      "source_file": "package.json",
+      "source_location": "L10"
+    },
+    {
+      "id": "package_scripts_start",
+      "label": "start",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "start",
+      "source_file": "package.json",
+      "source_location": "L12"
+    },
+    {
+      "id": "package_scripts_test",
+      "label": "test",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "test",
+      "source_file": "package.json",
+      "source_location": "L13"
+    },
+    {
+      "id": "package_scripts_test_e2e",
+      "label": "test:e2e",
+      "_origin": "ast",
+      "community": 2,
+      "community_name": "package.json",
+      "file_type": "code",
+      "norm_label": "test:e2e",
+      "source_file": "package.json",
+      "source_location": "L14"
     },
     {
       "id": "package_version",
@@ -879,17 +1639,6 @@
       "source_location": "L1"
     },
     {
-      "id": "vitest_config",
-      "label": "vitest.config.ts",
-      "_origin": "ast",
-      "community": 2,
-      "community_name": "package.json",
-      "file_type": "code",
-      "norm_label": "vitest.config.ts",
-      "source_file": "vitest.config.ts",
-      "source_location": "L1"
-    },
-    {
       "id": "ref_playwright_test",
       "label": "@playwright/test",
       "_origin": "ast",
@@ -898,7 +1647,7 @@
       "file_type": "concept",
       "norm_label": "@playwright/test",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L27"
     },
     {
       "id": "ref_react_dom",
@@ -909,7 +1658,7 @@
       "file_type": "concept",
       "norm_label": "react-dom",
       "source_file": "package.json",
-      "source_location": "L19"
+      "source_location": "L22"
     },
     {
       "id": "ref_tailwindcss",
@@ -920,7 +1669,7 @@
       "file_type": "concept",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L32"
     },
     {
       "id": "ref_tailwindcss_postcss",
@@ -931,7 +1680,7 @@
       "file_type": "concept",
       "norm_label": "@tailwindcss/postcss",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L28"
     },
     {
       "id": "ref_types_node",
@@ -942,7 +1691,7 @@
       "file_type": "concept",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L29"
     },
     {
       "id": "ref_types_react",
@@ -953,7 +1702,7 @@
       "file_type": "concept",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L30"
     },
     {
       "id": "ref_types_react_dom",
@@ -964,7 +1713,7 @@
       "file_type": "concept",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L31"
     },
     {
       "id": "ref_typescript",
@@ -975,18 +1724,18 @@
       "file_type": "concept",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L33"
     },
     {
-      "id": "ref_vitest",
-      "label": "vitest",
+      "id": "ref_vercel_functions",
+      "label": "@vercel/functions",
       "_origin": "ast",
       "community": 2,
       "community_name": "package.json",
       "file_type": "concept",
-      "norm_label": "vitest",
+      "norm_label": "@vercel/functions",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L18"
     },
     {
       "id": "tsconfig",
@@ -1206,7 +1955,7 @@
       "file_type": "code",
       "norm_label": "devdependencies",
       "source_file": "package.json",
-      "source_location": "L21"
+      "source_location": "L26"
     },
     {
       "id": "package_devdependencies_playwright_test",
@@ -1217,7 +1966,7 @@
       "file_type": "code",
       "norm_label": "@playwright/test",
       "source_file": "package.json",
-      "source_location": "L22"
+      "source_location": "L27"
     },
     {
       "id": "package_devdependencies_tailwindcss",
@@ -1228,7 +1977,7 @@
       "file_type": "code",
       "norm_label": "tailwindcss",
       "source_file": "package.json",
-      "source_location": "L27"
+      "source_location": "L32"
     },
     {
       "id": "package_devdependencies_tailwindcss_postcss",
@@ -1239,7 +1988,7 @@
       "file_type": "code",
       "norm_label": "@tailwindcss/postcss",
       "source_file": "package.json",
-      "source_location": "L23"
+      "source_location": "L28"
     },
     {
       "id": "package_devdependencies_types_node",
@@ -1250,7 +1999,7 @@
       "file_type": "code",
       "norm_label": "@types/node",
       "source_file": "package.json",
-      "source_location": "L24"
+      "source_location": "L29"
     },
     {
       "id": "package_devdependencies_types_react",
@@ -1261,7 +2010,7 @@
       "file_type": "code",
       "norm_label": "@types/react",
       "source_file": "package.json",
-      "source_location": "L25"
+      "source_location": "L30"
     },
     {
       "id": "package_devdependencies_types_react_dom",
@@ -1272,7 +2021,7 @@
       "file_type": "code",
       "norm_label": "@types/react-dom",
       "source_file": "package.json",
-      "source_location": "L26"
+      "source_location": "L31"
     },
     {
       "id": "package_devdependencies_typescript",
@@ -1283,7 +2032,7 @@
       "file_type": "code",
       "norm_label": "typescript",
       "source_file": "package.json",
-      "source_location": "L28"
+      "source_location": "L33"
     },
     {
       "id": "package_devdependencies_vitest",
@@ -1294,7 +2043,7 @@
       "file_type": "code",
       "norm_label": "vitest",
       "source_file": "package.json",
-      "source_location": "L29"
+      "source_location": "L34"
     },
     {
       "id": "app_layout",
@@ -1349,7 +2098,7 @@
       "file_type": "code",
       "norm_label": "nextconfig",
       "source_file": "next.config.ts",
-      "source_location": "L5"
+      "source_location": "L6"
     },
     {
       "id": "ref_next",
@@ -1360,73 +2109,96 @@
       "file_type": "concept",
       "norm_label": "next",
       "source_file": "package.json",
+      "source_location": "L20"
+    },
+    {
+      "id": "app_page",
+      "label": "page.tsx",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "page.tsx",
+      "source_file": "app/page.tsx",
+      "source_location": "L1"
+    },
+    {
+      "id": "app_page_dynamic",
+      "label": "dynamic",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "dynamic",
+      "source_file": "app/page.tsx",
+      "source_location": "L4"
+    },
+    {
+      "id": "lib_music_queries",
+      "label": "queries.ts",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "queries.ts",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_music_queries_entry_columns",
+      "label": "ENTRY_COLUMNS",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "entry_columns",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L8"
+    },
+    {
+      "id": "lib_music_queries_test",
+      "label": "queries.test.ts",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "queries.test.ts",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L1"
+    },
+    {
+      "id": "lib_music_queries_test_mocksql",
+      "label": "mockSql",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "code",
+      "norm_label": "mocksql",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L5"
+    },
+    {
+      "id": "ref_neondatabase_serverless",
+      "label": "@neondatabase/serverless",
+      "_origin": "ast",
+      "community": 6,
+      "community_name": "queries.ts",
+      "file_type": "concept",
+      "norm_label": "@neondatabase/serverless",
+      "source_file": "package.json",
       "source_location": "L17"
     },
     {
-      "id": "package_scripts",
-      "label": "scripts",
+      "id": "readme_\u6b4c\u8a5e\u653f\u7b56_lyrics_policy",
+      "label": "\u6b4c\u8a5e\u653f\u7b56 / Lyrics policy",
       "_origin": "ast",
       "community": 6,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "scripts",
-      "source_file": "package.json",
-      "source_location": "L9"
-    },
-    {
-      "id": "package_scripts_build",
-      "label": "build",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "build",
-      "source_file": "package.json",
-      "source_location": "L11"
-    },
-    {
-      "id": "package_scripts_dev",
-      "label": "dev",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "dev",
-      "source_file": "package.json",
-      "source_location": "L10"
-    },
-    {
-      "id": "package_scripts_start",
-      "label": "start",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "start",
-      "source_file": "package.json",
-      "source_location": "L12"
-    },
-    {
-      "id": "package_scripts_test",
-      "label": "test",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "test",
-      "source_file": "package.json",
-      "source_location": "L13"
-    },
-    {
-      "id": "package_scripts_test_e2e",
-      "label": "test:e2e",
-      "_origin": "ast",
-      "community": 6,
-      "community_name": "scripts",
-      "file_type": "code",
-      "norm_label": "test:e2e",
-      "source_file": "package.json",
-      "source_location": "L14"
+      "community_name": "queries.ts",
+      "file_type": "document",
+      "node_kind": "heading",
+      "norm_label": "\u6b4c\u8a5e\u653f\u7b56 / lyrics policy",
+      "source_file": "README.md",
+      "source_location": "L99"
     },
     {
       "id": "agents_skills_grilling_skill",
@@ -1581,9 +2353,185 @@
       "norm_label": "next_types_routes_d",
       "source_file": "",
       "type": "external"
+    },
+    {
+      "id": "ref_node_path",
+      "label": "ref_node_path",
+      "community": 13,
+      "community_name": "route.ts",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ref_node_path",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "ref_node_child_process",
+      "label": "ref_node_child_process",
+      "community": 6,
+      "community_name": "queries.ts",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ref_node_child_process",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "ref_node_crypto",
+      "label": "ref_node_crypto",
+      "community": 6,
+      "community_name": "queries.ts",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ref_node_crypto",
+      "source_file": "",
+      "type": "external"
+    },
+    {
+      "id": "ref_node_fs",
+      "label": "ref_node_fs",
+      "community": 6,
+      "community_name": "queries.ts",
+      "external": true,
+      "file_type": "concept",
+      "norm_label": "ref_node_fs",
+      "source_file": "",
+      "type": "external"
     }
   ],
   "links": [
+    {
+      "source": "app_api_recommend_route_classifygatewayerror",
+      "target": "app_api_recommend_route_collecthaystack",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_post",
+      "target": "lib_music_recommend_buildrecommendprompt",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L147",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_post",
+      "target": "app_api_recommend_route_classifygatewayerror",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L151",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_post",
+      "target": "app_api_recommend_route_err",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L82",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient_homeclient",
+      "target": "app_components_parkscene_parkscene",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L79",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient_homeclient",
+      "target": "app_components_musicsection_musicsection",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient_homeclient",
+      "target": "app_components_recommender_recommender",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L85",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient_homeclient",
+      "target": "app_components_sectionpopup_sectionpopup",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L99",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection_entrypopup",
+      "target": "lib_music_recommend_stripwiki",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L111",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection_musicsection",
+      "target": "lib_music_recommend_stripwiki",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L49",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection_musicsection",
+      "target": "app_components_musicsection_entrypopup",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L60",
+      "weight": 1.0
+    },
     {
       "source": "app_components_parkscene_adjacentfreetile",
       "target": "app_components_parkscene_tileblocked",
@@ -1646,26 +2594,122 @@
     },
     {
       "source": "app_page_home",
-      "target": "app_components_parkscene_parkscene",
+      "target": "lib_music_queries_getentries",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L76",
+      "source_location": "L7",
       "weight": 1.0
     },
     {
       "source": "app_page_home",
-      "target": "app_components_sectionpopup_sectionpopup",
+      "target": "app_components_homeclient_homeclient",
       "relation": "calls",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "call",
       "source_file": "app/page.tsx",
-      "source_location": "L92",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_getentries",
+      "target": "lib_music_queries_readfixture",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_getentries",
+      "target": "lib_music_queries_usefixture",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_getsongcandidates",
+      "target": "lib_music_queries_usefixture",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L80",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_getsongcandidates",
+      "target": "lib_music_queries_readfixture",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L81",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test_capturedsql",
+      "target": "lib_music_queries_test_sqltext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_recommend_buildrecommendprompt",
+      "target": "lib_music_recommend_buildcandidatecontext",
+      "relation": "calls",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "app_api_recommend_route_test_req",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test",
+      "target": "lib_music_queries_test_capturedsql",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "call",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L19",
       "weight": 1.0
     },
     {
@@ -1726,6 +2770,199 @@
       "context": "field",
       "source_file": "app/components/SectionPopup.tsx",
       "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_post",
+      "target": "lib_music_queries",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "deferred": true,
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L101",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route",
+      "target": "lib_music_recommend_buildrecommendprompt",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route",
+      "target": "lib_music_types_recommenderrorcode",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "app_api_recommend_route_post",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "lib_music_types_entry",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L15",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "app_components_parkscene_parkscene",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "app_components_sectionpopup_sectionpopup",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "app_components_musicsection_musicsection",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "app_components_recommender_recommender",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "content_site_lang",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "content_site_lang_storage_key",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "content_site_section_ids",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "content_site_sectionid",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "content_site_sitecontent",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection",
+      "target": "lib_music_recommend_stripwiki",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection",
+      "target": "lib_music_types_entry",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -1897,6 +3134,30 @@
       "weight": 1.0
     },
     {
+      "source": "app_components_recommender",
+      "target": "lib_music_types_pick",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_recommender",
+      "target": "lib_music_types_recommenderrorcode",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
       "source": "app_components_sectionpopup",
       "target": "content_site_github_url",
       "relation": "imports",
@@ -1958,86 +3219,26 @@
     },
     {
       "source": "app_page",
-      "target": "app_components_parkscene_parkscene",
+      "target": "app_components_homeclient_homeclient",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "app/page.tsx",
-      "source_location": "L4",
+      "source_location": "L1",
       "weight": 1.0
     },
     {
       "source": "app_page",
-      "target": "app_components_sectionpopup_sectionpopup",
+      "target": "lib_music_queries_getentries",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "app/page.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "app_page",
-      "target": "content_site_lang",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/page.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "app_page",
-      "target": "content_site_lang_storage_key",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/page.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "app_page",
-      "target": "content_site_section_ids",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/page.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "app_page",
-      "target": "content_site_sectionid",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/page.tsx",
-      "source_location": "L6",
-      "weight": 1.0
-    },
-    {
-      "source": "app_page",
-      "target": "content_site_sitecontent",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/page.tsx",
-      "source_location": "L6",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -2137,8 +3338,80 @@
       "weight": 1.0
     },
     {
+      "source": "lib_music_queries",
+      "target": "lib_music_types_entry",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test",
+      "target": "lib_music_queries_entry_columns",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test",
+      "target": "lib_music_queries_getentries",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test",
+      "target": "lib_music_queries_getsongcandidates",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test",
+      "target": "lib_music_queries_visitorhash",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_recommend",
+      "target": "lib_music_types_entry",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "package",
-      "target": "ref_next",
+      "target": "ref_neondatabase_serverless",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2150,7 +3423,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react",
+      "target": "ref_vercel_functions",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2162,7 +3435,7 @@
     },
     {
       "source": "package",
-      "target": "ref_react_dom",
+      "target": "ref_ai",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2174,7 +3447,31 @@
     },
     {
       "source": "package",
-      "target": "ref_playwright_test",
+      "target": "ref_next",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_react",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_react_dom",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2186,7 +3483,7 @@
     },
     {
       "source": "package",
-      "target": "ref_tailwindcss_postcss",
+      "target": "ref_react_markdown",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2198,7 +3495,7 @@
     },
     {
       "source": "package",
-      "target": "ref_types_node",
+      "target": "ref_zod",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2210,31 +3507,7 @@
     },
     {
       "source": "package",
-      "target": "ref_types_react",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L25",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
-      "target": "ref_types_react_dom",
-      "relation": "imports",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "package.json",
-      "source_location": "L26",
-      "weight": 1.0
-    },
-    {
-      "source": "package",
-      "target": "ref_tailwindcss",
+      "target": "ref_playwright_test",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2246,7 +3519,7 @@
     },
     {
       "source": "package",
-      "target": "ref_typescript",
+      "target": "ref_tailwindcss_postcss",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2258,7 +3531,7 @@
     },
     {
       "source": "package",
-      "target": "ref_vitest",
+      "target": "ref_types_node",
       "relation": "imports",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2266,6 +3539,309 @@
       "context": "import",
       "source_file": "package.json",
       "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_types_react",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_types_react_dom",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_tailwindcss",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_typescript",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "package",
+      "target": "ref_vitest",
+      "relation": "imports",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route",
+      "target": "ref_next",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route",
+      "target": "ref_zod",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route",
+      "target": "ref_ai",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route",
+      "target": "lib_music_recommend",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route",
+      "target": "lib_music_types",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L5",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "ref_vitest",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "ref_ai",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L18",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "app_api_recommend_route",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L19",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "lib_music_queries",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "lib_music_types",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L15",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "app_components_parkscene",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "app_components_sectionpopup",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "app_components_musicsection",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "app_components_recommender",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "content_site",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection",
+      "target": "ref_react_markdown",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection",
+      "target": "lib_music_recommend",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection",
+      "target": "lib_music_types",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L6",
+      "type_only": true,
       "weight": 1.0
     },
     {
@@ -2330,6 +3906,31 @@
       "weight": 1.0
     },
     {
+      "source": "app_components_recommender",
+      "target": "ref_react",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_recommender",
+      "target": "lib_music_types",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L4",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
       "source": "app_components_sectionpopup",
       "target": "ref_react",
       "relation": "imports_from",
@@ -2380,50 +3981,26 @@
     },
     {
       "source": "app_page",
-      "target": "ref_react",
+      "target": "app_components_homeclient",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "app/page.tsx",
-      "source_location": "L3",
+      "source_location": "L1",
       "weight": 1.0
     },
     {
       "source": "app_page",
-      "target": "app_components_parkscene",
+      "target": "lib_music_queries",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "context": "import",
       "source_file": "app/page.tsx",
-      "source_location": "L4",
-      "weight": 1.0
-    },
-    {
-      "source": "app_page",
-      "target": "app_components_sectionpopup",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/page.tsx",
-      "source_location": "L5",
-      "weight": 1.0
-    },
-    {
-      "source": "app_page",
-      "target": "content_site",
-      "relation": "imports_from",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "context": "import",
-      "source_file": "app/page.tsx",
-      "source_location": "L6",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -2451,6 +4028,18 @@
       "weight": 1.0
     },
     {
+      "source": "e2e_music_spec",
+      "target": "ref_playwright_test",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "e2e/music.spec.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
       "source": "e2e_park_spec",
       "target": "ref_playwright_test",
       "relation": "imports_from",
@@ -2460,6 +4049,116 @@
       "context": "import",
       "source_file": "e2e/park.spec.ts",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "ref_node_crypto",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "ref_node_fs",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "ref_neondatabase_serverless",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "lib_music_types",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L4",
+      "type_only": true,
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test",
+      "target": "ref_vitest",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test",
+      "target": "lib_music_queries",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test",
+      "target": "ref_node_child_process",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test",
+      "target": "ref_node_fs",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_recommend",
+      "target": "lib_music_types",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L1",
+      "type_only": true,
       "weight": 1.0
     },
     {
@@ -2513,7 +4212,7 @@
     },
     {
       "source": "vitest_config",
-      "target": "ref_vitest",
+      "target": "ref_node_path",
       "relation": "imports_from",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -2521,6 +4220,18 @@
       "context": "import",
       "source_file": "vitest.config.ts",
       "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "vitest_config",
+      "target": "ref_vitest",
+      "relation": "imports_from",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "context": "import",
+      "source_file": "vitest.config.ts",
+      "source_location": "L2",
       "weight": 1.0
     },
     {
@@ -2554,6 +4265,138 @@
       "confidence_score": 1.0,
       "source_file": ".agents/skills/grilling/SKILL.md",
       "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route",
+      "target": "app_api_recommend_route_collecthaystack",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L11",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route",
+      "target": "app_api_recommend_route_classifygatewayerror",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L61",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route",
+      "target": "app_api_recommend_route_err",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L7",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route",
+      "target": "app_api_recommend_route_post",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/recommend/route.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "app_api_recommend_route_test_mockgenerate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "app_api_recommend_route_test_mockcandidates",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "app_api_recommend_route_test_mockusage",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "app_api_recommend_route_test_candidates",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L37",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_homeclient",
+      "target": "app_components_homeclient_homeclient",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/HomeClient.tsx",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection",
+      "target": "app_components_musicsection_musicsection",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection",
+      "target": "app_components_musicsection_entrypopup",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L65",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_musicsection",
+      "target": "app_components_musicsection_order",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/MusicSection.tsx",
+      "source_location": "L8",
       "weight": 1.0
     },
     {
@@ -2722,6 +4565,50 @@
       "weight": 1.0
     },
     {
+      "source": "app_components_recommender",
+      "target": "app_components_recommender_fallback",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L12",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_recommender",
+      "target": "app_components_recommender_recommender",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L22",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_recommender",
+      "target": "app_components_recommender_status",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L6",
+      "weight": 1.0
+    },
+    {
+      "source": "app_components_recommender_recommender",
+      "target": "app_components_recommender_recommender_submit",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/components/Recommender.tsx",
+      "source_location": "L47",
+      "weight": 1.0
+    },
+    {
       "source": "app_components_sectionpopup",
       "target": "app_components_sectionpopup_props",
       "relation": "contains",
@@ -2877,13 +4764,24 @@
     },
     {
       "source": "app_page",
+      "target": "app_page_dynamic",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/page.tsx",
+      "source_location": "L4",
+      "weight": 1.0
+    },
+    {
+      "source": "app_page",
       "target": "app_page_home",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "app/page.tsx",
-      "source_location": "L14",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -3085,6 +4983,281 @@
       "weight": 1.0
     },
     {
+      "source": "lib_music_queries",
+      "target": "lib_music_queries_visitorhash",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L102",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "lib_music_queries_getdayhk",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L106",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "lib_music_queries_checkandcountusage",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L115",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "lib_music_queries_getclientip",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L131",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "lib_music_queries_entryrow",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "lib_music_queries_maprow",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L26",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "lib_music_queries_usefixture",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L40",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "lib_music_queries_readfixture",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L48",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "lib_music_queries_getentries",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L64",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "lib_music_queries_getsongcandidates",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L77",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries",
+      "target": "lib_music_queries_entry_columns",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L8",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test",
+      "target": "lib_music_queries_test_sqltext",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L13",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_test",
+      "target": "lib_music_queries_test_mocksql",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/queries.test.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_recommend",
+      "target": "lib_music_recommend_buildcandidatecontext",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L10",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_recommend",
+      "target": "lib_music_recommend_buildrecommendprompt",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L16",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_recommend",
+      "target": "lib_music_recommend_stripwiki",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_recommend",
+      "target": "lib_music_recommend_candidate",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_recommend",
+      "target": "lib_music_recommend_recommend_system",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/recommend.ts",
+      "source_location": "L5",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_types",
+      "target": "lib_music_types_category",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/types.ts",
+      "source_location": "L1",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_types",
+      "target": "lib_music_types_recommendrequest",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/types.ts",
+      "source_location": "L14",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_types",
+      "target": "lib_music_types_pick",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/types.ts",
+      "source_location": "L17",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_types",
+      "target": "lib_music_types_kind",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/types.ts",
+      "source_location": "L2",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_types",
+      "target": "lib_music_types_recommenderrorcode",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/types.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_types",
+      "target": "lib_music_types_entry",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/types.ts",
+      "source_location": "L3",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_types",
+      "target": "lib_music_types_recommendresponse",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "lib/music/types.ts",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
       "source": "next_config",
       "target": "next_config_nextconfig",
       "relation": "contains",
@@ -3092,7 +5265,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "next.config.ts",
-      "source_location": "L5",
+      "source_location": "L6",
       "weight": 1.0
     },
     {
@@ -3125,7 +5298,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L21",
+      "source_location": "L26",
       "weight": 1.0
     },
     {
@@ -3147,7 +5320,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
-      "source_location": "L31",
+      "source_location": "L36",
       "weight": 1.0
     },
     {
@@ -3185,7 +5358,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_next",
+      "target": "package_dependencies_neondatabase_serverless",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3196,7 +5369,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react",
+      "target": "package_dependencies_vercel_functions",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3207,7 +5380,7 @@
     },
     {
       "source": "package_dependencies",
-      "target": "package_dependencies_react_dom",
+      "target": "package_dependencies_ai",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3217,8 +5390,30 @@
       "weight": 1.0
     },
     {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_playwright_test",
+      "source": "package_dependencies",
+      "target": "package_dependencies_next",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L21",
+      "weight": 1.0
+    },
+    {
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3228,8 +5423,8 @@
       "weight": 1.0
     },
     {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_tailwindcss_postcss",
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_markdown",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3239,8 +5434,8 @@
       "weight": 1.0
     },
     {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_node",
+      "source": "package_dependencies",
+      "target": "package_dependencies_zod",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3251,29 +5446,7 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L25",
-      "weight": 1.0
-    },
-    {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_types_react_dom",
-      "relation": "contains",
-      "_origin": "ast",
-      "confidence": "EXTRACTED",
-      "confidence_score": 1.0,
-      "source_file": "package.json",
-      "source_location": "L26",
-      "weight": 1.0
-    },
-    {
-      "source": "package_devdependencies",
-      "target": "package_devdependencies_tailwindcss",
+      "target": "package_devdependencies_playwright_test",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3284,7 +5457,7 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_typescript",
+      "target": "package_devdependencies_tailwindcss_postcss",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
@@ -3295,13 +5468,68 @@
     },
     {
       "source": "package_devdependencies",
-      "target": "package_devdependencies_vitest",
+      "target": "package_devdependencies_types_node",
       "relation": "contains",
       "_origin": "ast",
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "package.json",
       "source_location": "L29",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react_dom",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_tailwindcss",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L33",
+      "weight": 1.0
+    },
+    {
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vitest",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "package.json",
+      "source_location": "L34",
       "weight": 1.0
     },
     {
@@ -3433,7 +5661,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L30",
+      "source_location": "L31",
       "weight": 1.0
     },
     {
@@ -3444,7 +5672,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L39",
+      "source_location": "L40",
       "weight": 1.0
     },
     {
@@ -3455,7 +5683,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L49",
+      "source_location": "L50",
       "weight": 1.0
     },
     {
@@ -3466,7 +5694,7 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L60",
+      "source_location": "L69",
       "weight": 1.0
     },
     {
@@ -3477,7 +5705,29 @@
       "confidence": "EXTRACTED",
       "confidence_score": 1.0,
       "source_file": "README.md",
-      "source_location": "L69",
+      "source_location": "L78",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
+      "target": "readme_\u97f3\u6a02_\u63a8\u4ecb_\u74b0\u5883\u8b8a\u6578_env_vars",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L83",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_kac_\u5605\u50cf\u7d20\u516c\u5712_kac_s_pixel_park",
+      "target": "readme_\u6b4c\u8a5e\u653f\u7b56_lyrics_policy",
+      "relation": "contains",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "README.md",
+      "source_location": "L99",
       "weight": 1.0
     },
     {
@@ -3679,6 +5929,15 @@
       "weight": 1.0
     },
     {
+      "source": "app_api_recommend_route",
+      "target": "lib_music_queries",
+      "relation": "dynamic_import",
+      "_origin": "ast",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "app/api/recommend/route.ts"
+    },
+    {
       "source": "next_env_d_rationale_6",
       "target": "next_env_d",
       "relation": "rationale_for",
@@ -3688,8 +5947,176 @@
       "source_file": "next-env.d.ts",
       "source_location": "L6",
       "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "lib_music_queries_getsongcandidates",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L23",
+      "weight": 1.0
+    },
+    {
+      "source": "app_api_recommend_route_test",
+      "target": "lib_music_queries_checkandcountusage",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "app/api/recommend/route.test.ts",
+      "source_location": "L24",
+      "weight": 1.0
+    },
+    {
+      "source": "lib_music_queries_getentries",
+      "target": "lib_music_queries_maprow",
+      "relation": "indirect_call",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.85,
+      "context": "argument",
+      "source_file": "lib/music/queries.ts",
+      "source_location": "L70",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_\u7d50\u69cb_layout",
+      "target": "lib_music_types_entry",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "Entry",
+      "source_file": "README.md",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_\u7d50\u69cb_layout",
+      "target": "lib_music_types_pick",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "Pick",
+      "source_file": "README.md",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_\u7d50\u69cb_layout",
+      "target": "lib_music_types_recommendrequest",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "RecommendRequest",
+      "source_file": "README.md",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_\u7d50\u69cb_layout",
+      "target": "lib_music_types_recommendresponse",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "RecommendResponse",
+      "source_file": "README.md",
+      "source_location": "L57",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_\u7d50\u69cb_layout",
+      "target": "lib_music_queries_checkandcountusage",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "checkAndCountUsage",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_\u6b4c\u8a5e\u653f\u7b56_lyrics_policy",
+      "target": "lib_music_queries_getentries",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "getEntries",
+      "source_file": "README.md",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_\u7d50\u69cb_layout",
+      "target": "lib_music_queries_getentries",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "getEntries",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_\u6b4c\u8a5e\u653f\u7b56_lyrics_policy",
+      "target": "lib_music_queries_getsongcandidates",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "getSongCandidates",
+      "source_file": "README.md",
+      "source_location": "L105",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_\u7d50\u69cb_layout",
+      "target": "lib_music_queries_getsongcandidates",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "getSongCandidates",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_\u7d50\u69cb_layout",
+      "target": "lib_music_recommend_stripwiki",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "stripWiki",
+      "source_file": "README.md",
+      "source_location": "L59",
+      "weight": 1.0
+    },
+    {
+      "source": "readme_\u7d50\u69cb_layout",
+      "target": "lib_music_queries_visitorhash",
+      "relation": "references",
+      "_origin": "ast",
+      "confidence": "INFERRED",
+      "confidence_score": 0.95,
+      "context": "visitorHash",
+      "source_file": "README.md",
+      "source_location": "L58",
+      "weight": 1.0
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "f0c75be6938acada295498433866a841e2186652"
+  "built_at_commit": "c91a381156b5d843cb777f1d1e3e65ae5a89ec81"
 }

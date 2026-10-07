@@ -2,7 +2,7 @@
  * KaC 個人介紹頁 — 唯一嘅文案來源 (single source of copy)。
  * KaC 改字只需要改呢個檔。
  *
- * 私隱規則：呢個檔只可以用「KaC」呢個名，唔可以有真名、相、
+ * 私隱規則：顯示名用「Desmond Cheung」（2026-10-05 本人批准），唔可以有相、
  * 電郵地址，亦唔可以有 futa9 私人 code、key 或內部資料。
  * ------------------------------------------------------------------ */
 
@@ -73,7 +73,7 @@ export interface SiteCopy {
 
 export const siteContent: Record<Lang, SiteCopy> = {
   zh: {
-    pageTitle: "KaC 嘅像素公園",
+    pageTitle: "Desmond Cheung 嘅像素公園",
     pageSubtitle: "四圍行吓，㩒吓啲物件，認識吓我啦！",
     langToggleLabel: "EN",
     parkHint:
@@ -83,13 +83,13 @@ export const siteContent: Record<Lang, SiteCopy> = {
     walkToLabel: "行過去",
     githubLabel: "GitHub",
     xLabel: "X",
-    xPlaceholderNote: "（X 帳號待 KaC 填寫）",
-    footerNote: "KaC 用像素起嘅小公園 · 純靜態，冇後端",
+    xPlaceholderNote: "（X 帳號待 Desmond Cheung 填寫）",
+    footerNote: "Desmond Cheung 用像素起嘅小公園 · 純靜態，冇後端",
     sections: {
       intro: {
         tabLabel: "自我介紹",
         objectLabel: "路牌",
-        title: "哈囉，我係 KaC！",
+        title: "哈囉，我係 Desmond Cheung！",
         body: ["一個鍾意將古靈精怪嘅諗法，變成真嘢嘅人。"],
       },
       interests: {
@@ -130,7 +130,7 @@ export const siteContent: Record<Lang, SiteCopy> = {
     },
   },
   en: {
-    pageTitle: "KaC's Pixel Park",
+    pageTitle: "Desmond Cheung's Pixel Park",
     pageSubtitle: "Walk around, poke the objects, and meet me!",
     langToggleLabel: "繁中",
     parkHint:
@@ -140,13 +140,13 @@ export const siteContent: Record<Lang, SiteCopy> = {
     walkToLabel: "Walk over",
     githubLabel: "GitHub",
     xLabel: "X",
-    xPlaceholderNote: "(X handle to be filled in by KaC)",
-    footerNote: "A tiny pixel park built by KaC · fully static, no backend",
+    xPlaceholderNote: "(X handle to be filled in by Desmond Cheung)",
+    footerNote: "A tiny pixel park built by Desmond Cheung · fully static, no backend",
     sections: {
       intro: {
         tabLabel: "Intro",
         objectLabel: "Signpost",
-        title: "Hi, I'm KaC!",
+        title: "Hi, I'm Desmond Cheung!",
         body: ["I turn quirky ideas into real things."],
       },
       interests: {
