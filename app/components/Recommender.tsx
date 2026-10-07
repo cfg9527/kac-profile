@@ -168,8 +168,7 @@ export default function Recommender() {
                       key={p.slug}
                       className="rounded-xl border-[3px] border-(--color-pg-ink) bg-white/60 p-2 px-3"
                     >
-                      <span className="font-black">{p.title}</span>{" "}
-                      <span className="pg-chip">{p.category}</span>
+                      <span className="font-black">{p.title}</span>
                       <p className="mt-1 font-bold">{p.reason}</p>
                     </li>
                   ))}
