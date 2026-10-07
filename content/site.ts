@@ -6,6 +6,8 @@
  * 電郵地址，亦唔可以有 futa9 私人 code、key 或內部資料。
  * ------------------------------------------------------------------ */
 
+import { INTERESTS_EN, INTRO_EN } from "./kpp9-copy";
+
 export type Lang = "zh" | "en";
 
 export type SectionId = "intro" | "interests" | "projects" | "contact";
@@ -117,15 +119,17 @@ export const siteContent: Record<Lang, SiteCopy> = {
         tabLabel: "自我介紹",
         objectLabel: "路牌",
         title: "哈囉，我係 Desmond Cheung，夜海邊行緊過嚟！",
-        body: ["我係一個鍾意將古靈精怪嘅諗法變成真嘢嘅人——諗法好似夜晚嘅浪咁，一個接一個湧上嚟，星光一照就變成泡泡，鯨魚咁大嘅夢都浮得起。"],
+        body: [
+          "嗰滴水，係一滴透明嘅眼淚，定係一滴無形嘅時間？佢輕輕咁跌落去，喺嗰個白色嘅瓷盤上面，一個微小嘅、幾乎聽唔到嘅聲響，「啪」。然後，佢開始擴張。唔係衝鋒陷陣，而係一種滲透，一種無聲嘅侵佔。",
+          "普魯士藍。呢個名本身就帶有某種古老嘅、神秘嘅氣息。佢唔係普通嘅藍，佢係深淵嘅顏色，係午夜天空最寂靜嗰一刻嘅顏色，係記憶深處嗰啲無法被言說嘅情感。",
+        ],
       },
       interests: {
         tabLabel: "興趣同性格",
         objectLabel: "長凳",
         title: "ENTP · 夜晚坐喺長凳睇星",
         body: [
-          "性格：ENTP —— 腦入面成晚開緊派對，諗法跳嚟跳去，好似星落海面咁一閃一閃，拆完再重組返，連雲都追唔上。",
-          "興趣：由量子物理游到古典小說，好似由浪尖潛到深海咁，乜都想試吓、乜都想知點解，連夢入面條鯨魚游去邊都想知。",
+          "喜歡在凌晨兩點拆解沒有生命的機械，或者任由墨水在吸水紙上無聲洇開成一片汪洋。指尖摸過粗糙的棉紙、冷硬的金屬倒角、被遺棄的建築藍圖，那些被標記了坐標卻從未建成的廢墟。沉溺於低頻的震動，像深海探測器傳回來的雜音，無始無終；追逐一切發酵過度、帶有霉味與舊皮革氣息的孤獨，收集那些早已停止運行的時鐘背面微弱的彈簧顫音。所有的熱度都被嚴密包裹在零度以下的藍調裏，不燃燒，只在極深的暗處，靜靜進行著一場永遠不打算對外公布的化學沉澱。",
         ],
       },
       projects: {
@@ -174,16 +178,13 @@ export const siteContent: Record<Lang, SiteCopy> = {
         tabLabel: "Intro",
         objectLabel: "Signpost",
         title: "Hi, I'm Desmond Cheung, walking over from the night sea!",
-        body: ["I turn quirky ideas into real things — ideas keep rolling in like night waves, bursting into bubbles under the starlight, big enough to float a dreaming whale."],
+        body: [...INTRO_EN],
       },
       interests: {
         tabLabel: "Interests",
         objectLabel: "Bench",
         title: "ENTP · sitting on the bench watching the stars",
-        body: [
-          "Personality: ENTP — my head throws parties all night, thoughts jumping like starlight on the sea, taken apart and put back together while the clouds chase behind.",
-          "Interests: from quantum physics to classical tales, diving from the wave tops to the deep sea — I want to try everything and know why everything, even where the whale in my dream is swimming.",
-        ],
+        body: [...INTERESTS_EN],
       },
       projects: {
         tabLabel: "Projects",
