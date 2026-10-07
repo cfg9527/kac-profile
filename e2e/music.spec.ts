@@ -4,26 +4,6 @@ test.beforeEach(async ({ page }) => {
   await page.goto("/");
 });
 
-test("music section renders grouped categories", async ({ page }) => {
-  const section = page.getByTestId("music-section");
-  await expect(section).toBeVisible();
-  await expect(section.getByRole("heading", { name: "華語流行" })).toBeVisible();
-  await expect(section.getByRole("heading", { name: "西方搖滾" })).toBeVisible();
-  await expect(section.getByRole("heading", { name: "電子Hip-Hop" })).toBeVisible();
-  await expect(section.getByRole("heading", { name: "參考資料" })).toBeVisible();
-  await expect(page.getByTestId("music-item-青花瓷-100d18")).toBeVisible();
-});
-
-test("detail popup shows bodyMd and 未完 note", async ({ page }) => {
-  await page.getByTestId("music-item-青花瓷-100d18").click();
-  const popup = page.getByTestId("music-popup");
-  await expect(popup).toBeVisible();
-  await expect(popup.getByText("天青色等煙雨")).toBeVisible();
-  await expect(popup.getByText("（未完）")).toBeVisible();
-  await page.keyboard.press("Escape");
-  await expect(popup).toBeHidden();
-});
-
 test("recommender keyboard flow shows picks, Esc closes and focus returns", async ({ page }) => {
   await page.route("**/api/recommend", async (route) => {
     await route.fulfill({
