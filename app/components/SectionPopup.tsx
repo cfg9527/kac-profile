@@ -78,7 +78,7 @@ export default function SectionPopup({ section, copy, onClose }: Props) {
             {sc.projects.map((p) => (
               <li
                 key={p.name}
-                className="rounded-xl border-[3px] border-(--color-pg-ink) bg-white/60 p-2 px-3"
+                className="dn-row rounded-xl p-2 px-3"
               >
                 <span className="font-black">{p.name}</span>
                 <span className="font-bold"> —— {p.line}</span>
@@ -93,7 +93,7 @@ export default function SectionPopup({ section, copy, onClose }: Props) {
               href={GITHUB_URL}
               target="_blank"
               rel="noreferrer"
-              className="pg-btn pg-btn--grass"
+              className="pg-btn"
               data-testid="github-link"
             >
               {copy.githubLabel} ↗

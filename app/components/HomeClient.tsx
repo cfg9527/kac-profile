@@ -1,6 +1,7 @@
 "use client";
 
 import { useCallback, useEffect, useState } from "react";
+import DreamBackdrop from "./DreamBackdrop";
 import ParkScene from "./ParkScene";
 import SectionPopup from "./SectionPopup";
 import Recommender from "./Recommender";
@@ -40,6 +41,7 @@ export default function HomeClient() {
 
   return (
     <main className="mx-auto flex min-h-screen w-full max-w-3xl flex-col gap-4 px-3 py-5 sm:px-5">
+      <DreamBackdrop />
       <header className="pg-card flex flex-wrap items-center justify-between gap-3 p-4">
         <div>
           <h1 className="text-2xl font-black sm:text-3xl">{copy.pageTitle}</h1>
@@ -80,7 +82,7 @@ export default function HomeClient() {
 
       <Recommender />
 
-      <footer className="pb-4 text-center text-sm font-bold opacity-80">
+      <footer className="dn-plate p-3 text-center text-sm font-bold">
         {copy.footerNote} ·{" "}
         <a
           href="https://github.com/cfg9527"

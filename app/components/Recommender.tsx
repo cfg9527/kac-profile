@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { RECOMMENDER_COPY } from "@/content/site";
 import type { Pick, RecommendErrorCode } from "@/lib/music/types";
 
 type Status =
@@ -80,14 +81,14 @@ export default function Recommender() {
   return (
     <section aria-labelledby="recommender-heading" className="pg-card p-4">
       <h2 id="recommender-heading" className="text-2xl font-black">
-        推介首歌
+        {RECOMMENDER_COPY.heading}
       </h2>
       <p className="mt-1 text-sm font-bold opacity-80">
-        講下你今日嘅心情，我哋幫你喺收藏入面揀 1 至 3 首歌。
+        {RECOMMENDER_COPY.intro}
       </p>
       <form data-testid="recommender-form" onSubmit={submit} className="mt-3 flex flex-col gap-2">
         <label htmlFor="recommender-input" className="font-black">
-          你嘅心情或者要求（最多 300 字）
+          {RECOMMENDER_COPY.inputLabel}
         </label>
         <div className="flex flex-col gap-2 sm:flex-row">
           <input
@@ -105,9 +106,9 @@ export default function Recommender() {
                 // ignore
               }
             }}
-            placeholder="例如：今晚想聽啲 chilli 嘅歌"
-            aria-label="你嘅心情或者要求"
-            className="min-h-[44px] flex-1 rounded-xl border-[3px] border-(--color-pg-ink) bg-white/80 px-3 py-2 text-base font-bold"
+            placeholder={RECOMMENDER_COPY.placeholder}
+            aria-label={RECOMMENDER_COPY.inputAria}
+            className="dn-input min-h-[44px] flex-1 rounded-xl px-3 py-2 text-base font-bold"
           />
           <button
             type="submit"
@@ -115,7 +116,7 @@ export default function Recommender() {
             disabled={loading}
             className="pg-btn pg-btn--pink min-h-[44px] min-w-[44px] px-6 disabled:opacity-60"
           >
-            {loading ? "諗緊…" : "推介首歌"}
+            {loading ? RECOMMENDER_COPY.submitting : RECOMMENDER_COPY.submit}
           </button>
         </div>
         <span data-testid="recommender-count" className="text-sm font-bold opacity-70" aria-live="polite">
@@ -139,13 +140,13 @@ export default function Recommender() {
           >
             <div className="mb-2 flex items-start justify-between gap-3">
               <h2 id="recommend-title" className="text-2xl font-black">
-                推介首歌
+                {RECOMMENDER_COPY.heading}
               </h2>
               <button
                 ref={closeRef}
                 type="button"
                 onClick={close}
-                aria-label="閂咗佢"
+                aria-label={RECOMMENDER_COPY.close}
                 data-testid="recommend-close"
                 className="pg-btn pg-btn--pink min-h-[44px] min-w-[44px] !px-3 !py-1 text-lg"
               >
@@ -158,7 +159,7 @@ export default function Recommender() {
                   <span aria-hidden="true" className="pg-bob inline-block">
                     🎵
                   </span>{" "}
-                  諗緊…幫你揀緊歌
+                  {RECOMMENDER_COPY.loading}
                 </p>
               )}
               {status.state === "done" && (
@@ -166,7 +167,7 @@ export default function Recommender() {
                   {status.picks.map((p) => (
                     <li
                       key={p.slug}
-                      className="rounded-xl border-[3px] border-(--color-pg-ink) bg-white/60 p-2 px-3"
+                      className="dn-row rounded-xl p-2 px-3"
                     >
                       <span className="font-black">{p.title}</span>
                       <p className="mt-1 font-bold">{p.reason}</p>

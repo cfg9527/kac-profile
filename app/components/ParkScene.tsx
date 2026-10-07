@@ -227,16 +227,16 @@ export default function ParkScene({ copy, onOpen }: Props) {
         className="pg-card pg-ground relative w-full overflow-hidden select-none"
         style={{ aspectRatio: "3 / 2", cursor: "pointer" }}
       >
-        {/* clouds */}
+        {/* moonlit pixel clouds drifting over the night sea */}
         <div aria-hidden="true" className="pointer-events-none absolute inset-x-0 top-0 h-1/4 overflow-hidden">
-          <div className="pg-cloud absolute top-1 left-0 h-5 w-16 rounded-full bg-white/90" />
+          <div className="pg-cloud absolute top-1 left-0 h-5 w-16 rounded-full bg-(--color-dn-violet)" />
           <div
-            className="pg-cloud absolute top-4 left-0 h-4 w-12 rounded-full bg-white/80"
+            className="pg-cloud absolute top-4 left-0 h-4 w-12 rounded-full bg-(--color-dn-magenta)/80"
             style={{ animationDelay: "-18s" }}
           />
         </div>
 
-        {/* path */}
+        {/* moonlit stepping stones */}
         {PATH_TILES.map((t, i) => (
           <div
             key={i}
@@ -247,8 +247,8 @@ export default function ParkScene({ copy, onOpen }: Props) {
               top: `${t.y * tilePctY}%`,
               width: `${tilePctX}%`,
               height: `${tilePctY}%`,
-              background: "var(--color-pg-path)",
-              boxShadow: "inset 0 0 0 2px var(--color-pg-path-dark)",
+              background: "var(--color-dn-panel)",
+              boxShadow: "inset 0 0 0 2px var(--color-dn-violet)",
             }}
           />
         ))}
@@ -313,7 +313,7 @@ export default function ParkScene({ copy, onOpen }: Props) {
               <span className={moving ? "" : "pg-bob"} style={{ display: "contents" }}>
                 <PixelSprite
                   sprite={OBJECT_SPRITES[id]}
-                  className="h-auto w-full drop-shadow-[2px_2px_0_var(--color-pg-ink)]"
+                  className="h-auto w-full drop-shadow-[2px_2px_0_var(--color-dn-ink)]"
                 />
               </span>
               <span className="pg-chip mt-1 whitespace-nowrap">
@@ -341,7 +341,7 @@ export default function ParkScene({ copy, onOpen }: Props) {
         >
           <PixelSprite
             sprite={KAC_FRAMES[moving ? frame : 0]}
-            className="h-auto w-full drop-shadow-[2px_2px_0_var(--color-pg-ink)]"
+            className="h-auto w-full drop-shadow-[2px_2px_0_var(--color-dn-ink)]"
           />
         </div>
       </div>
