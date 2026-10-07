@@ -43,6 +43,34 @@ export const GITHUB_URL = "https://github.com/cfg9527";
 
 export const LANG_STORAGE_KEY = "kac-park-lang";
 
+/* KPP-7 contract: recommender UI copy (zh only, as before) moves here so
+ * Recommender.tsx has no hard-coded strings. Voice: stream-of-consciousness
+ * night-sea imagery. `loading` must keep the word 「諗緊」 (e2e relies on it).
+ * TODO(KPP-7): rewrite in the new voice; values below are the old copy. */
+export interface RecommenderCopy {
+  heading: string;
+  intro: string;
+  inputLabel: string;
+  inputAria: string;
+  placeholder: string;
+  submit: string;
+  submitting: string;
+  loading: string;
+  close: string;
+}
+
+export const RECOMMENDER_COPY: RecommenderCopy = {
+  heading: "推介首歌",
+  intro: "講下你今日嘅心情，我哋幫你喺收藏入面揀 1 至 3 首歌。",
+  inputLabel: "你嘅心情或者要求（最多 300 字）",
+  inputAria: "你嘅心情或者要求",
+  placeholder: "例如：今晚想聽啲 chilli 嘅歌",
+  submit: "推介首歌",
+  submitting: "諗緊…",
+  loading: "諗緊…幫你揀緊歌",
+  close: "閂咗佢",
+};
+
 export interface ProjectItem {
   name: string;
   line: string;
