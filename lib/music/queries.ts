@@ -1,8 +1,9 @@
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { neon } from "@neondatabase/serverless";
-import type { Entry } from "./types";
+import type { Entry, SongCandidate } from "./types";
 import { isCategory } from "./types";
+import { toOntologyLite } from "./shortlist";
 
 // Explicit column list for the entries table. The copyrighted full-text
 // column is deliberately absent here and must never be added.
@@ -92,34 +93,87 @@ export async function getEntries(): Promise<Entry[]> {
   }
 }
 
-export async function getSongCandidates(): Promise<
-  Pick<Entry, "slug" | "title" | "category" | "summary">[]
-> {
+// KPP-6 contract: candidates now carry `ontology: OntologyLite | null` (label-only).
+export async function getSongCandidates(): Promise<SongCandidate[]> {
   if (useFixture()) {
-    const all = await readFixture();
-    return all
-      .filter((e) => e.kind === "song")
-      .map((e) => ({ slug: e.slug, title: e.title, category: e.category, summary: e.summary }));
+    const raw = await readFile(process.env.MUSIC_DATA_FIXTURE as string, "utf8");
+    const data = JSON.parse(raw) as Array<Record<string, unknown>>;
+    const out: SongCandidate[] = [];
+    for (const r of data) {
+      const category = r["category"] as Entry["category"];
+      const kind = (r["kind"] ?? r["Kind"]) as string;
+      if (!isCategory(category)) {
+        console.warn("[music] dropped entry with unknown category", {
+          slug: String(r["slug"]),
+          category: r["category"],
+        });
+        continue;
+      }
+      if (kind !== "song") continue;
+      const slug = String(r["slug"]);
+      const title = String(r["title"]);
+      const summary = String(r["summary"] ?? "");
+      const ontology = toOntologyLite(r["ontology"]);
+      out.push({ slug, title, category, summary, ontology });
+    }
+    return out;
   }
   if (!process.env.DATABASE_URL) throw new Error(MISSING_DB_MESSAGE);
   try {
     const sql = neon(process.env.DATABASE_URL);
-    const rows = (await sql`SELECT slug, title, category, summary FROM entries WHERE kind = 'song' ORDER BY category, id`) as unknown as Array<{
+    const rows = (await sql`SELECT slug, title, category, summary, ontology FROM entries WHERE kind = 'song' ORDER BY category, id`) as unknown as Array<{
       slug: string;
       title: string;
       category: Entry["category"];
       summary: string;
+      ontology: unknown;
     }>;
-    const kept: Pick<Entry, "slug" | "title" | "category" | "summary">[] = [];
+    const kept: SongCandidate[] = [];
     for (const r of rows) {
       if (isCategory(r.category)) {
-        kept.push({ slug: r.slug, title: r.title, category: r.category, summary: r.summary });
+        const slug = r.slug;
+        const title = r.title;
+        const category = r.category;
+        const summary = r.summary;
+        const ontology = toOntologyLite(r.ontology);
+        kept.push({ slug, title, category, summary, ontology });
       } else {
         console.warn("[music] dropped entry with unknown category", { slug: r.slug, category: r.category });
       }
     }
     return kept;
   } catch (err) {
+    if ((err as { code?: unknown })?.code === "42703") {
+      console.warn("[music] ontology column missing; recommending without ontology");
+      try {
+        const sql = neon(process.env.DATABASE_URL);
+        const rows = (await sql`SELECT slug, title, category, summary FROM entries WHERE kind = 'song' ORDER BY category, id`) as unknown as Array<{
+          slug: string;
+          title: string;
+          category: Entry["category"];
+          summary: string;
+        }>;
+        const kept: SongCandidate[] = [];
+        for (const r of rows) {
+          if (isCategory(r.category)) {
+            const slug = r.slug;
+            const title = r.title;
+            const category = r.category;
+            const summary = r.summary;
+            kept.push({ slug, title, category, summary, ontology: null });
+          } else {
+            console.warn("[music] dropped entry with unknown category", {
+              slug: r.slug,
+              category: r.category,
+            });
+          }
+        }
+        return kept;
+      } catch (err2) {
+        const cause = err2 instanceof Error ? err2.message : String(err2);
+        throw new Error(`Failed to load music entries: ${cause}`);
+      }
+    }
     const cause = err instanceof Error ? err.message : String(err);
     throw new Error(`Failed to load music entries: ${cause}`);
   }

@@ -1,7 +1,7 @@
 import { NextResponse } from "next/server";
-import { z } from "zod";
 import { generateText, Output, gateway } from "ai";
-import { buildRecommendPrompt } from "@/lib/music/recommend";
+import { buildRecommendPrompt, buildRecommendSchema } from "@/lib/music/recommend";
+import { SHORTLIST_LIMIT, shortlistCandidates } from "@/lib/music/shortlist";
 import type { RecommendErrorCode } from "@/lib/music/types";
 
 function err(status: number, error: RecommendErrorCode, message: string) {
@@ -127,26 +127,49 @@ export async function POST(request: Request) {
     return err(502, "gateway_error", "揀唔到歌，試多次？");
   }
 
-  const slugs = candidates.map((c) => c.slug);
-  const schema = z.object({
-    picks: z
-      .array(
-        z.object({ slug: z.enum(slugs as [string, ...string[]]), reason: z.string().max(120) }),
-      )
-      .min(1)
-      .max(3),
-  });
+  const short = shortlistCandidates(query, candidates, { limit: SHORTLIST_LIMIT });
+  const shortlisted = short.candidates;
+  if (shortlisted.length === 0) {
+    return err(502, "gateway_error", "揀唔到歌，試多次？");
+  }
+
+  const slugs = shortlisted.map((c) => c.slug);
+  const schema = buildRecommendSchema(slugs);
 
   let generated: { picks: { slug: string; reason: string }[] };
+  let usageInfo: {
+    inputTokens: number;
+    outputTokens: number;
+    reasoningTokens: number;
+    ms: number;
+  } | null = null;
   try {
-    const result = await generateText({
+    const start = Date.now();
+    const result = (await generateText({
       model: gateway(modelId),
       output: Output.object({ schema }),
       maxOutputTokens: 400,
       temperature: 0.3,
-      prompt: buildRecommendPrompt(candidates, query),
-    });
+      reasoning: "none",
+      prompt: buildRecommendPrompt(shortlisted, query),
+    })) as unknown as {
+      output: { picks: { slug: string; reason: string }[] };
+      usage?: {
+        inputTokens?: unknown;
+        outputTokens?: unknown;
+        outputTokenDetails?: { reasoningTokens?: unknown };
+      };
+    };
+    const ms = Date.now() - start;
     generated = result.output as { picks: { slug: string; reason: string }[] };
+    const u = result.usage;
+    const inputTokens = typeof u?.inputTokens === "number" ? u.inputTokens : 0;
+    const outputTokens = typeof u?.outputTokens === "number" ? u.outputTokens : 0;
+    const reasoningTokens =
+      typeof u?.outputTokenDetails?.reasoningTokens === "number"
+        ? (u.outputTokenDetails.reasoningTokens as number)
+        : 0;
+    usageInfo = { inputTokens, outputTokens, reasoningTokens, ms };
   } catch (e) {
     const kind = classifyGatewayError(e);
     if (kind === "budget_exhausted") {
@@ -159,7 +182,7 @@ export async function POST(request: Request) {
     return err(502, "gateway_error", "推介服務暫時用唔到，稍後再試 🎵");
   }
 
-  const bySlug = new Map(candidates.map((c) => [c.slug, c]));
+  const bySlug = new Map(shortlisted.map((c) => [c.slug, c]));
   const seen = new Set<string>();
   const picks: { slug: string; title: string; category: string; reason: string }[] = [];
   for (const p of generated.picks ?? []) {
@@ -178,6 +201,17 @@ export async function POST(request: Request) {
   }
   if (picks.length === 0) {
     return err(502, "gateway_error", "揀唔到歌，試多次？");
+  }
+  if (usageInfo) {
+    console.info("[recommend] usage", {
+      shortlist: shortlisted.length,
+      matched: short.matched,
+      fallback: short.fallback,
+      inputTokens: usageInfo.inputTokens,
+      outputTokens: usageInfo.outputTokens,
+      reasoningTokens: usageInfo.reasoningTokens,
+      ms: usageInfo.ms,
+    });
   }
   return NextResponse.json({ ok: true, picks });
 }
