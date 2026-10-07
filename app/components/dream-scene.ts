@@ -29,6 +29,14 @@ export interface DreamGlint {
   delay: number;
 }
 
+/**
+ * KPP-7b contract: CSS px per star size unit. A star renders as a square of
+ * side `size * STAR_PIXEL` px, so the smallest star (size 1) is STAR_PIXEL px.
+ * Must be >= 4 so every star is clearly visible; biggest star <= 16 px.
+ * TODO(KPP-7b): raise it and use it in DreamBackdrop.
+ */
+export const STAR_PIXEL = 1;
+
 /** Hand-placed pixel stars in the sky band (percentages of the backdrop box). */
 export const DREAM_STARS: readonly DreamStar[] = [
   { x: 4, y: 6, size: 2, delay: 0 },
