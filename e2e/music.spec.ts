@@ -11,7 +11,7 @@ test("recommender keyboard flow shows picks, Esc closes and focus returns", asyn
       contentType: "application/json",
       body: JSON.stringify({
         ok: true,
-        picks: [{ slug: "青花瓷-100d18", title: "青花瓷", category: "華語流行", reason: "啱你心情" }],
+        picks: [{ slug: "測試歌甲-100d18", title: "測試歌甲", category: "華語流行", reason: "啱你心情" }],
       }),
     });
   });
@@ -22,7 +22,7 @@ test("recommender keyboard flow shows picks, Esc closes and focus returns", asyn
   await page.keyboard.press("Enter");
   const dialog = page.getByTestId("recommend-dialog");
   await expect(dialog).toBeVisible();
-  await expect(dialog.getByText("青花瓷")).toBeVisible();
+  await expect(dialog.getByText("測試歌甲")).toBeVisible();
   await page.keyboard.press("Escape");
   await expect(dialog).toBeHidden();
   await expect(input).toBeFocused();

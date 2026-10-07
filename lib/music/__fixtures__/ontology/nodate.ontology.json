@@ -1,0 +1,17 @@
+{
+  "version": 1,
+  "song": {
+    "title": "測試歌丁",
+    "artist": "虛構歌手丁",
+    "album": null,
+    "year": null
+  },
+  "theme": [
+    { "label": "測試小品", "evidence": "虛構歌手丁的測試曲風小品" }
+  ],
+  "emotions": [],
+  "timeline": [],
+  "causality": [],
+  "imagery": [],
+  "links": []
+}
