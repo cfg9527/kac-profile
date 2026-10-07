@@ -43,10 +43,9 @@ export const GITHUB_URL = "https://github.com/cfg9527";
 
 export const LANG_STORAGE_KEY = "kac-park-lang";
 
-/* KPP-7 contract: recommender UI copy (zh only, as before) moves here so
+/* KPP-7: recommender UI copy (zh only, as before) lives here so
  * Recommender.tsx has no hard-coded strings. Voice: stream-of-consciousness
- * night-sea imagery. `loading` must keep the word 「諗緊」 (e2e relies on it).
- * TODO(KPP-7): rewrite in the new voice; values below are the old copy. */
+ * night-sea imagery. `loading` keeps the word 「諗緊」 (e2e relies on it). */
 export interface RecommenderCopy {
   heading: string;
   intro: string;

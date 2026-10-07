@@ -14,6 +14,7 @@ import {
   DREAM_STARS,
   SEA_TESTID,
   SKY_TESTID,
+  STAR_PIXEL,
   STAR_TESTID,
 } from "./dream-scene";
 
@@ -35,7 +36,7 @@ export default function DreamBackdrop() {
             "linear-gradient(to bottom, var(--color-dn-night) 0%, var(--color-dn-deep) 34%, var(--color-dn-violet) 58%, var(--color-dn-magenta) 76%, var(--color-dn-ember) 100%)",
         }}
       >
-        {/* twinkling pixel stars */}
+        {/* twinkling pixel stars, sized by STAR_PIXEL so all stay visible */}
         {DREAM_STARS.map((s, i) => (
           <span
             key={i}
@@ -45,18 +46,18 @@ export default function DreamBackdrop() {
             style={{
               left: `${s.x}%`,
               top: `${(s.y / 62) * 100}%`,
-              width: s.size,
-              height: s.size,
+              width: s.size * STAR_PIXEL,
+              height: s.size * STAR_PIXEL,
               animationDelay: `${s.delay}s`,
             }}
           />
         ))}
 
-        {/* stepped shooting star */}
+        {/* stepped shooting star arcing through the top-right sky */}
         <span
           aria-hidden="true"
           className="dn-shooting-star absolute"
-          style={{ left: "62%", top: "12%", width: 48, height: 4 }}
+          style={{ left: "78%", top: "4%", width: 48, height: 4 }}
         />
 
         {/* pixel clouds: violet blocks with a magenta dusk edge */}

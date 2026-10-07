@@ -30,31 +30,33 @@ export interface DreamGlint {
 }
 
 /**
- * KPP-7b contract: CSS px per star size unit. A star renders as a square of
- * side `size * STAR_PIXEL` px, so the smallest star (size 1) is STAR_PIXEL px.
- * Must be >= 4 so every star is clearly visible; biggest star <= 16 px.
- * TODO(KPP-7b): raise it and use it in DreamBackdrop.
+ * CSS px per star size unit. A star renders as a square of side
+ * `size * STAR_PIXEL` px, so the smallest star (size 1) is STAR_PIXEL px.
  */
-export const STAR_PIXEL = 1;
+export const STAR_PIXEL = 4;
 
-/** Hand-placed pixel stars in the sky band (percentages of the backdrop box). */
+/* Hand-placed pixel stars in the sky band (percentages of the backdrop box).
+ * The top rows sit in the band above the header and the outer columns sit in
+ * the side margins on wide screens, so they stay visible around the cards. */
 export const DREAM_STARS: readonly DreamStar[] = [
-  { x: 4, y: 6, size: 2, delay: 0 },
-  { x: 11, y: 18, size: 1, delay: 0.7 },
-  { x: 18, y: 8, size: 3, delay: 1.3 },
-  { x: 25, y: 28, size: 1, delay: 0.4 },
-  { x: 31, y: 12, size: 2, delay: 2.1 },
-  { x: 38, y: 4, size: 1, delay: 1.1 },
-  { x: 44, y: 22, size: 2, delay: 0.2 },
-  { x: 51, y: 10, size: 1, delay: 1.8 },
-  { x: 57, y: 32, size: 3, delay: 0.9 },
-  { x: 63, y: 6, size: 2, delay: 2.4 },
-  { x: 70, y: 18, size: 1, delay: 0.5 },
-  { x: 76, y: 28, size: 2, delay: 1.5 },
-  { x: 82, y: 10, size: 1, delay: 2.8 },
-  { x: 88, y: 24, size: 3, delay: 0.1 },
-  { x: 93, y: 14, size: 2, delay: 1.9 },
-  { x: 97, y: 38, size: 1, delay: 2.2 },
+  { x: 5, y: 2, size: 2, delay: 0 },
+  { x: 20, y: 1.5, size: 1, delay: 0.7 },
+  { x: 35, y: 3, size: 3, delay: 1.3 },
+  { x: 50, y: 1, size: 2, delay: 0.4 },
+  { x: 65, y: 2.5, size: 1, delay: 2.1 },
+  { x: 80, y: 1.5, size: 3, delay: 1.1 },
+  { x: 93, y: 3, size: 2, delay: 0.2 },
+  { x: 8, y: 5, size: 1, delay: 1.8 },
+  { x: 2, y: 12, size: 2, delay: 0.9 },
+  { x: 97, y: 10, size: 1, delay: 2.4 },
+  { x: 12, y: 22, size: 3, delay: 0.5 },
+  { x: 88, y: 20, size: 2, delay: 1.5 },
+  { x: 28, y: 15, size: 1, delay: 2.8 },
+  { x: 45, y: 30, size: 2, delay: 0.1 },
+  { x: 60, y: 40, size: 3, delay: 1.9 },
+  { x: 75, y: 35, size: 1, delay: 2.2 },
+  { x: 16, y: 42, size: 2, delay: 1.2 },
+  { x: 84, y: 46, size: 2, delay: 2.6 },
 ];
 
 /** Hand-placed wave glints in the sea band (percentages of the backdrop box). */
