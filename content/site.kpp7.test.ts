@@ -86,6 +86,10 @@ describe("KPP-7 copy voice", () => {
 describe("KPP-7 facts unchanged", () => {
   const LANGS: Lang[] = ["zh", "en"];
 
+  // KaC-approved guard shared by tests 6 and 6b: standalone 張 is banned,
+  // 擴張 is allowed. Keep as the single source so the two cannot drift.
+  const FORBIDDEN_NAME_PATTERN = /Desmond(?! Cheung)|(?<!Desmond )Cheung|(?<!擴)張/;
+
   it("6. name is exactly 'Desmond Cheung' wherever a name appears; no other spelling", () => {
     for (const lang of LANGS) {
       const c = siteContent[lang];
@@ -93,7 +97,15 @@ describe("KPP-7 facts unchanged", () => {
       expect(c.sections.intro.title).toContain("Desmond Cheung");
       expect(c.footerNote).toContain("Desmond Cheung");
       const all = JSON.stringify(c);
-      expect(all).not.toMatch(/Desmond(?! Cheung)|(?<!Desmond )Cheung|張/);
+      expect(all).not.toMatch(FORBIDDEN_NAME_PATTERN);
+    }
+  });
+
+  it("6b. 擴張 is allowed but standalone 張 is still caught", () => {
+    expect("擴張").not.toMatch(FORBIDDEN_NAME_PATTERN);
+    expect("然後，佢開始擴張。").not.toMatch(FORBIDDEN_NAME_PATTERN);
+    for (const s of ["張", "張三", "擴張 張"]) {
+      expect(s, JSON.stringify(s)).toMatch(FORBIDDEN_NAME_PATTERN);
     }
   });
 
