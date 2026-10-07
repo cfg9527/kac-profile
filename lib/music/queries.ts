@@ -1,7 +1,7 @@
 import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { neon } from "@neondatabase/serverless";
-import type { Entry } from "./types";
+import type { Entry, SongCandidate } from "./types";
 import { isCategory } from "./types";
 
 // Explicit column list for the entries table. The copyrighted full-text
@@ -92,9 +92,8 @@ export async function getEntries(): Promise<Entry[]> {
   }
 }
 
-export async function getSongCandidates(): Promise<
-  Pick<Entry, "slug" | "title" | "category" | "summary">[]
-> {
+// KPP-6 contract: candidates now carry `ontology: OntologyLite | null` (label-only).
+export async function getSongCandidates(): Promise<SongCandidate[]> {
   if (useFixture()) {
     const all = await readFixture();
     return all

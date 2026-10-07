@@ -1,6 +1,12 @@
-import type { Entry } from "./types";
+import type { z } from "zod";
+import type { SongCandidate } from "./types";
 
-export type Candidate = Pick<Entry, "slug" | "title" | "category" | "summary">;
+// KPP-6: a candidate may now carry a label-only ontology (see OntologyLite).
+export type Candidate = SongCandidate;
+
+export interface RecommendOutput {
+  picks: { slug: string; reason: string }[];
+}
 
 export const RECOMMEND_SYSTEM =
   "你係像素公園嘅音樂推介員。只可以從下面提供嘅歌曲清單入面揀 1 至 3 首歌回應訪客，" +
@@ -19,4 +25,14 @@ export function buildRecommendPrompt(candidates: Candidate[], query: string): st
 
 export function stripWiki(text: string): string {
   return text.replace(/\[\[(.+?)\]\]/g, "$1");
+}
+
+/**
+ * KPP-6 contract: structured-output schema for one request.
+ * picks: 1..3 items of { slug: one of `slugs` (z.enum), reason: string <= 120 chars }.
+ * Throws an Error whose message contains "empty" if `slugs` is empty.
+ */
+export function buildRecommendSchema(slugs: readonly string[]): z.ZodType<RecommendOutput> {
+  void slugs;
+  throw new Error("KPP-6: buildRecommendSchema not implemented");
 }
