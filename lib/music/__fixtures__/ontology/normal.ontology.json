@@ -1,0 +1,27 @@
+{
+  "version": 1,
+  "song": {
+    "title": "測試歌甲",
+    "artist": "虛構歌手",
+    "album": "測試專輯丙",
+    "year": 2004
+  },
+  "theme": [
+    { "label": "離別與遠行", "evidence": "離別讓主角決心遠行" }
+  ],
+  "emotions": [
+    { "label": "孤獨", "intensity": 3, "evidence": "虛構意象測試句甲在副歌出現" }
+  ],
+  "timeline": [
+    { "when": "2004年夏天", "kind": "season", "evidence": "2004 年夏天，虛構歌手在測試城市舉行首演" }
+  ],
+  "causality": [
+    { "cause": "離別", "effect": "遠行", "evidence": "離別讓主角決心遠行，遠行帶來新的開始" }
+  ],
+  "imagery": [
+    { "label": "測試意象", "evidence": "測試意象貫穿全曲" }
+  ],
+  "links": [
+    { "target": "測試專輯丙", "type": "album", "evidence": "虛構歌手於 2004 年發表測試風代表作《測試專輯丙》" }
+  ]
+}

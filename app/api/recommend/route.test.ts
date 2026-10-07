@@ -35,9 +35,9 @@ function req(query: unknown, ip = "1.2.3.4") {
 }
 
 const CANDIDATES = [
-  { slug: "青花瓷-100d18", title: "青花瓷", category: "華語流行" as const, summary: "中國風經典" },
-  { slug: "beanie-d3547f", title: "Beanie", category: "西方搖滾" as const, summary: "Neo-Soul" },
-  { slug: "hate-it-or-love-it-0698b7", title: "Hate It or Love It", category: "電子Hip-Hop" as const, summary: "嘻哈" },
+  { slug: "測試歌甲-100d18", title: "測試歌甲", category: "華語流行" as const, summary: "測試風經典" },
+  { slug: "測試歌丁-d3547f", title: "測試歌丁", category: "西方搖滾" as const, summary: "測試曲風" },
+  { slug: "測試歌己-0698b7", title: "測試歌己", category: "電子Hip-Hop" as const, summary: "測試說唱" },
 ];
 
 beforeEach(() => {
@@ -70,8 +70,8 @@ describe("POST /api/recommend", () => {
     mockGenerate.mockResolvedValue({
       output: {
         picks: [
-          { slug: "青花瓷-100d18", reason: "啱你今日心情" },
-          { slug: "beanie-d3547f", reason: "放鬆之選" },
+          { slug: "測試歌甲-100d18", reason: "啱你今日心情" },
+          { slug: "測試歌丁-d3547f", reason: "放鬆之選" },
         ],
       },
     } as never);
@@ -81,8 +81,8 @@ describe("POST /api/recommend", () => {
     expect(body.ok).toBe(true);
     expect(body.picks).toHaveLength(2);
     expect(body.picks[0]).toMatchObject({
-      slug: "青花瓷-100d18",
-      title: "青花瓷",
+      slug: "測試歌甲-100d18",
+      title: "測試歌甲",
       category: "華語流行",
     });
   });
@@ -162,12 +162,12 @@ describe("POST /api/recommend", () => {
 
   it("14. unknown slug filtered, valid kept; all unknown returns 502", async () => {
     mockGenerate.mockResolvedValue({
-      output: { picks: [{ slug: "nope-000", reason: "假" }, { slug: "青花瓷-100d18", reason: "真" }] },
+      output: { picks: [{ slug: "nope-000", reason: "假" }, { slug: "測試歌甲-100d18", reason: "真" }] },
     } as never);
     const res = await POST(req("想聽歌") as never);
     expect(res.status).toBe(200);
     const body = (await res.json()) as { ok: boolean; picks: { slug: string }[] };
-    expect(body.picks.map((p) => p.slug)).toEqual(["青花瓷-100d18"]);
+    expect(body.picks.map((p) => p.slug)).toEqual(["測試歌甲-100d18"]);
 
     mockGenerate.mockResolvedValue({ output: { picks: [{ slug: "ghost", reason: "無" }] } } as never);
     const res2 = await POST(req("想聽歌") as never);

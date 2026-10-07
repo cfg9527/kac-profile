@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "song": {
+    "title": "測試歌戊",
+    "artist": "虛構歌手戊",
+    "album": null,
+    "year": null
+  },
+  "theme": [
+    { "label": "測試小品", "evidence": "虛構歌手戊的測試曲風小品" }
+  ],
+  "emotions": [],
+  "timeline": [],
+  "causality": [],
+  "imagery": [
+    { "label": "虛構歌詞測試句乙完整行", "evidence": "副歌引用虛構歌詞測試句乙完整行" }
+  ],
+  "links": []
+}

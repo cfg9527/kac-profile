@@ -1,0 +1,19 @@
+{
+  "version": 1,
+  "song": {
+    "title": "測試歌甲",
+    "artist": "虛構歌手",
+    "album": "測試專輯丙",
+    "year": 2004
+  },
+  "theme": [
+    { "label": "離別與遠行", "evidence": "這句虛構證據不在正文中出現測試" }
+  ],
+  "emotions": [
+    { "label": "孤獨", "intensity": 3, "evidence": "虛構意象測試句甲在副歌出現" }
+  ],
+  "timeline": [],
+  "causality": [],
+  "imagery": [],
+  "links": []
+}

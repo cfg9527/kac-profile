@@ -33,11 +33,11 @@ describe("getEntries", () => {
     mockSql.mockResolvedValueOnce([
       {
         id: 1,
-        slug: "青花瓷-100d18",
-        title: "青花瓷",
+        slug: "測試歌甲-100d18",
+        title: "測試歌甲",
         category: "華語流行",
         kind: "song",
-        summary: "中國風經典",
+        summary: "測試風經典",
         album_ref: null,
         body_md: null,
         body_truncated: false,
@@ -47,11 +47,11 @@ describe("getEntries", () => {
     expect(entries).toHaveLength(1);
     expect(entries[0]).toEqual({
       id: 1,
-      slug: "青花瓷-100d18",
-      title: "青花瓷",
+      slug: "測試歌甲-100d18",
+      title: "測試歌甲",
       category: "華語流行",
       kind: "song",
-      summary: "中國風經典",
+      summary: "測試風經典",
       albumRef: null,
       bodyMd: null,
       bodyTruncated: false,

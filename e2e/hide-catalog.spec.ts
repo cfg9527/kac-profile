@@ -82,7 +82,7 @@ test("recommender shows title+reason only, no links/category/bodyMd, Esc closes 
       contentType: "application/json",
       body: JSON.stringify({
         ok: true,
-        picks: [{ slug: "青花瓷-100d18", title: "青花瓷", category: "華語流行", reason: "啱你心情" }],
+        picks: [{ slug: "測試歌甲-100d18", title: "測試歌甲", category: "華語流行", reason: "啱你心情" }],
       }),
     });
   });
@@ -94,12 +94,12 @@ test("recommender shows title+reason only, no links/category/bodyMd, Esc closes 
   await page.keyboard.press("Enter");
   const dialog = page.getByTestId("recommend-dialog");
   await expect(dialog).toBeVisible();
-  await expect(dialog.getByText("青花瓷")).toBeVisible();
+  await expect(dialog.getByText("測試歌甲")).toBeVisible();
   await expect(dialog.getByText("啱你心情")).toBeVisible();
   // Must show only title + reason.
   await expect(dialog.locator("a")).toHaveCount(0);
   await expect(dialog.getByText("華語流行")).toHaveCount(0);
-  await expect(dialog.getByText("天青色等煙雨")).toHaveCount(0);
+  await expect(dialog.getByText("虛構意象測試句甲")).toHaveCount(0);
   await page.keyboard.press("Escape");
   await expect(dialog).toBeHidden();
   await expect(input).toBeFocused();
