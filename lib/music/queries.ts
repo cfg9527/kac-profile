@@ -2,6 +2,7 @@ import { createHash } from "node:crypto";
 import { readFile } from "node:fs/promises";
 import { neon } from "@neondatabase/serverless";
 import type { Entry } from "./types";
+import { isCategory } from "./types";
 
 // Explicit column list for the entries table. The copyrighted full-text
 // column is deliberately absent here and must never be added.
@@ -48,7 +49,7 @@ function useFixture(): boolean {
 async function readFixture(): Promise<Entry[]> {
   const raw = await readFile(process.env.MUSIC_DATA_FIXTURE as string, "utf8");
   const data = JSON.parse(raw) as Array<Record<string, unknown>>;
-  return data.map((r, i) => ({
+  const mapped = data.map((r, i) => ({
     id: typeof r.id === "number" ? r.id : i + 1,
     slug: String(r.slug),
     title: String(r.title),
@@ -59,6 +60,15 @@ async function readFixture(): Promise<Entry[]> {
     bodyMd: (r.bodyMd ?? r.body_md ?? null) as string | null,
     bodyTruncated: Boolean(r.bodyTruncated ?? r.body_truncated ?? false),
   }));
+  const kept: Entry[] = [];
+  for (const e of mapped) {
+    if (isCategory(e.category)) {
+      kept.push(e);
+    } else {
+      console.warn("[music] dropped entry with unknown category", { slug: e.slug, category: e.category });
+    }
+  }
+  return kept;
 }
 
 export async function getEntries(): Promise<Entry[]> {
@@ -67,7 +77,15 @@ export async function getEntries(): Promise<Entry[]> {
   try {
     const sql = neon(process.env.DATABASE_URL);
     const rows = (await sql`SELECT id, slug, title, category, kind, summary, album_ref, body_md, body_truncated FROM entries ORDER BY category, id`) as unknown as EntryRow[];
-    return rows.map(mapRow);
+    const kept: Entry[] = [];
+    for (const e of rows.map(mapRow)) {
+      if (isCategory(e.category)) {
+        kept.push(e);
+      } else {
+        console.warn("[music] dropped entry with unknown category", { slug: e.slug, category: e.category });
+      }
+    }
+    return kept;
   } catch (err) {
     const cause = err instanceof Error ? err.message : String(err);
     throw new Error(`Failed to load music entries: ${cause}`);
@@ -92,7 +110,15 @@ export async function getSongCandidates(): Promise<
       category: Entry["category"];
       summary: string;
     }>;
-    return rows.map((r) => ({ slug: r.slug, title: r.title, category: r.category, summary: r.summary }));
+    const kept: Pick<Entry, "slug" | "title" | "category" | "summary">[] = [];
+    for (const r of rows) {
+      if (isCategory(r.category)) {
+        kept.push({ slug: r.slug, title: r.title, category: r.category, summary: r.summary });
+      } else {
+        console.warn("[music] dropped entry with unknown category", { slug: r.slug, category: r.category });
+      }
+    }
+    return kept;
   } catch (err) {
     const cause = err instanceof Error ? err.message : String(err);
     throw new Error(`Failed to load music entries: ${cause}`);

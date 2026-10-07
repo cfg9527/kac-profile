@@ -1,4 +1,20 @@
-export type Category = "華語流行" | "西方搖滾" | "電子Hip-Hop" | "參考資料" | "分冊目錄";
+export const CATEGORIES = [
+  "華語流行",
+  "西方搖滾",
+  "電子Hip-Hop",
+  "參考資料",
+  "分冊目錄",
+  "爵士",
+  "J-Pop",
+  "K-pop",
+  "古典",
+  "東南亞",
+  "跨界",
+] as const;
+export type Category = (typeof CATEGORIES)[number];
+export function isCategory(v: unknown): v is Category {
+  return typeof v === "string" && (CATEGORIES as readonly string[]).includes(v);
+}
 export type Kind = "song" | "album" | "artist" | "playlist" | "film" | "interview" | "index";
 export interface Entry {
   id: number;
