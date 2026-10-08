@@ -106,7 +106,7 @@ export const siteContent: Record<Lang, SiteCopy> = {
     pageSubtitle: "夜色落到海面，星光碎成浪，鯨魚喺夢入面翻身——四圍行吓，㩒吓啲物件，認識吓我啦！",
     langToggleLabel: "EN",
     parkHint:
-      "玩法：用鍵盤方向鍵 / WASD 喺夜海邊行，星光做路燈，潮聲做背景；㩒吓啲物件睇介紹，睇吓邊朵浪會開口；手機可以篤地面行，或者用畫面方向掣。下面都有快捷掣直達每一部分。",
+      "玩法：用鍵盤方向鍵 / WASD 喺夜海邊行，星光做路燈，潮聲做背景；㩒吓啲物件睇介紹，睇吓邊朵浪會開口；手機可以篤地面行。下面都有快捷掣直達每一部分。",
     dpadLabel: "方向掣",
     closeLabel: "閂咗佢",
     walkToLabel: "行過去",
@@ -165,7 +165,7 @@ export const siteContent: Record<Lang, SiteCopy> = {
     pageSubtitle: "The night sea is dreaming — stars melting into waves, a whale turning over in its sleep. Walk around, poke the objects, and meet me!",
     langToggleLabel: "繁中",
     parkHint:
-      "How to play: walk the night shore with arrow keys / WASD, starlight for street lamps and the tide for background music. Poke objects for each section and see which wave speaks. On mobile, tap the ground to walk or use the on-screen pad. Shortcut buttons below jump to every section.",
+      "How to play: walk the night shore with arrow keys / WASD, starlight for street lamps and the tide for background music. Poke objects for each section and see which wave speaks. On mobile, tap the ground to walk. Shortcut buttons below jump to every section.",
     dpadLabel: "D-pad",
     closeLabel: "Close",
     walkToLabel: "Walk over",
