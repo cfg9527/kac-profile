@@ -345,64 +345,6 @@ export default function ParkScene({ copy, onOpen }: Props) {
           />
         </div>
       </div>
-
-      <DPad onStep={step} label={copy.dpadLabel} />
-    </div>
-  );
-}
-
-function DPad({ onStep, label }: { onStep: (dx: number, dy: number) => void; label: string }) {
-  const suppressClick = useRef(false);
-  const timer = useRef<ReturnType<typeof setInterval> | null>(null);
-
-  const stop = () => {
-    if (timer.current) {
-      clearInterval(timer.current);
-      timer.current = null;
-    }
-  };
-
-  useEffect(() => stop, []);
-
-  const hold = (dx: number, dy: number) => ({
-    onPointerDown: () => {
-      onStep(dx, dy);
-      suppressClick.current = false;
-      timer.current = setInterval(() => {
-        suppressClick.current = true;
-        onStep(dx, dy);
-      }, 200);
-    },
-    onPointerUp: stop,
-    onPointerLeave: stop,
-    onPointerCancel: stop,
-    onClick: () => {
-      if (suppressClick.current) {
-        suppressClick.current = false;
-        return;
-      }
-      onStep(dx, dy);
-    },
-  });
-
-  const btn =
-    "pg-btn flex h-12 w-12 items-center justify-center !p-0 text-xl leading-none";
-  return (
-    <div className="mt-3 flex items-center justify-center gap-3" role="group" aria-label={label}>
-      <button type="button" aria-label="←" className={btn} {...hold(-1, 0)}>
-        ←
-      </button>
-      <div className="flex flex-col gap-2">
-        <button type="button" aria-label="↑" className={btn} {...hold(0, -1)}>
-          ↑
-        </button>
-        <button type="button" aria-label="↓" className={btn} {...hold(0, 1)}>
-          ↓
-        </button>
-      </div>
-      <button type="button" aria-label="→" className={btn} {...hold(1, 0)}>
-        →
-      </button>
     </div>
   );
 }

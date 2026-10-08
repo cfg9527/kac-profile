@@ -31,11 +31,14 @@ test("keyboard walk moves KaC and Esc closes the popup", async ({ page }) => {
   await expect(popup).toBeHidden();
 });
 
-test("on-screen d-pad moves KaC", async ({ page }) => {
+test("tapping the ground moves KaC (on-screen d-pad removed in KPP-10)", async ({ page }) => {
   await page.goto("/");
   const kac = page.getByTestId("character");
   const before = await kac.getAttribute("data-y");
-  await page.getByRole("button", { name: "↓" }).click();
+  const scene = page.getByTestId("park-scene");
+  const box = (await scene.boundingBox())!;
+  // centre of tile (6, 4), two tiles below KaC's start (6, 2)
+  await scene.click({ position: { x: (box.width * 6.5) / 12, y: (box.height * 4.5) / 8 } });
   await expect
     .poll(async () => page.getByTestId("character").getAttribute("data-y"))
     .not.toBe(before);
