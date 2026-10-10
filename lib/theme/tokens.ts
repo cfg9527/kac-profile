@@ -1,4 +1,4 @@
-/* KPP-7 contract: "dream pixel night-sea" theme tokens.
+/* KPP-7 contract: dream pixel theme tokens (Prussian-blue night sea).
  * Single source of truth for colours. globals.css must define one
  * `--color-dn-<kebab-name>` custom property per key below with the same
  * value (e.g. glowTeal -> --color-dn-glow-teal).
@@ -11,14 +11,14 @@
 export type HexColor = `#${string}`;
 
 export type DreamColorName =
-  | "night" // page background, deepest blue
-  | "deep" // input / sea-deep surface
+  | "night" // page background, deepest Prussian
+  | "deep" // classic Prussian / sea-deep surface
   | "panel" // opaque card / dialog / plate surface
-  | "violet" // cloud / border purple
-  | "magenta" // dusk cloud highlight
-  | "ember" // orange-red horizon
-  | "dusk" // warm orange (secondary button / chip)
-  | "glowTeal" // glowing sea / primary button / links
+  | "violet" // cloud / border steel-blue accent
+  | "magenta" // dusty rose dusk cloud highlight
+  | "ember" // copper horizon
+  | "dusk" // brass gold (secondary button / chip)
+  | "glowTeal" // ice cyan sea / primary button / links
   | "foam" // wave crest highlight
   | "moon" // primary text on dark surfaces
   | "mist" // secondary text on dark surfaces
@@ -38,21 +38,22 @@ export interface TextPair {
 export const AA_NORMAL = 4.5;
 export const AA_LARGE = 3;
 
-/** Dream pixel night-sea palette: deep blue/purple night banding into
- * magenta and orange-red at the horizon, glowing teal sea, moonlit text. */
+/** Prussian-blue night-sea palette: classic #003153 surfaces banding into
+ * steel-blue clouds, dusty rose and copper at the horizon, ice-cyan glow,
+ * cool moonlit text. */
 export const DREAM_COLORS: DreamPalette = {
-  night: "#0b1030",
-  deep: "#141a45",
-  panel: "#1e2454",
-  violet: "#9d7bff",
-  magenta: "#e86fd0",
-  ember: "#ff5a3c",
-  dusk: "#ffb35c",
-  glowTeal: "#4de3c2",
-  foam: "#fff3d6",
-  moon: "#f6f2e7",
-  mist: "#c9d4e8",
-  ink: "#10142b",
+  night: "#001a2c",
+  deep: "#003153",
+  panel: "#0d4568",
+  violet: "#6ba3c4",
+  magenta: "#b87a8c",
+  ember: "#d46a3a",
+  dusk: "#d9a85c",
+  glowTeal: "#5ec8e6",
+  foam: "#e8f0f5",
+  moon: "#eef4f8",
+  mist: "#9db4c7",
+  ink: "#0a1620",
 };
 
 /** Every text/background pair the UI uses. Do not remove entries. */
