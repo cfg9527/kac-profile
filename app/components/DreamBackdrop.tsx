@@ -25,7 +25,7 @@ export default function DreamBackdrop() {
       className="pointer-events-none fixed inset-0 overflow-hidden"
       style={{ zIndex: -1 }}
     >
-      {/* sky: deep blue banding into magenta and orange-red at the horizon */}
+      {/* sky: Prussian banding into steel, dusty rose, and copper at the horizon */}
       <div
         data-testid={SKY_TESTID}
         aria-hidden="true"

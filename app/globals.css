@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
-/* Dream pixel night-sea tokens (mirrors lib/theme/tokens.ts DREAM_COLORS).
- * Look: deep blue/purple night banding into magenta and orange-red,
- * glowing-teal sea, moonlit text on opaque plates. */
+/* Dream pixel Prussian-blue night-sea tokens (mirrors lib/theme/tokens.ts
+ * DREAM_COLORS). Look: classic Prussian surfaces banding into steel-blue
+ * and dusty rose, ice-cyan sea glow, cool moonlit text on opaque plates. */
 @theme {
   --font-sans: "Nunito", "PingFang HK", "PingFang TC", "Microsoft JhengHei",
     "Noto Sans TC", system-ui, sans-serif;
@@ -23,18 +23,18 @@
 }
 
 :root {
-  --color-dn-night: #0b1030;
-  --color-dn-deep: #141a45;
-  --color-dn-panel: #1e2454;
-  --color-dn-violet: #9d7bff;
-  --color-dn-magenta: #e86fd0;
-  --color-dn-ember: #ff5a3c;
-  --color-dn-dusk: #ffb35c;
-  --color-dn-glow-teal: #4de3c2;
-  --color-dn-foam: #fff3d6;
-  --color-dn-moon: #f6f2e7;
-  --color-dn-mist: #c9d4e8;
-  --color-dn-ink: #10142b;
+  --color-dn-night: #001a2c;
+  --color-dn-deep: #003153;
+  --color-dn-panel: #0d4568;
+  --color-dn-violet: #6ba3c4;
+  --color-dn-magenta: #b87a8c;
+  --color-dn-ember: #d46a3a;
+  --color-dn-dusk: #d9a85c;
+  --color-dn-glow-teal: #5ec8e6;
+  --color-dn-foam: #e8f0f5;
+  --color-dn-moon: #eef4f8;
+  --color-dn-mist: #9db4c7;
+  --color-dn-ink: #0a1620;
 }
 
 html {
@@ -146,7 +146,7 @@ body {
 .pg-ground {
   background-color: var(--color-dn-deep);
   background-image: repeating-conic-gradient(
-    rgba(77, 227, 194, 0.07) 0% 25%,
+    rgba(94, 200, 230, 0.07) 0% 25%,
     transparent 0% 50%
   );
   background-size: 48px 48px;

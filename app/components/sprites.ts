@@ -7,12 +7,12 @@ export interface Sprite {
 }
 
 const SKIN = "#ffd9b3";
-const INK = "#10142b";
-const CAP = "#7a6ff0";
-const CAP_DARK = "#5a4fc4";
-const SHIRT = "#4de3c2";
-const PANTS = "#2a335f";
-const SHOE = "#ffb35c";
+const INK = "#0a1620";
+const CAP = "#6ba3c4";
+const CAP_DARK = "#4a7fa0";
+const SHIRT = "#5ec8e6";
+const PANTS = "#0d4568";
+const SHOE = "#d9a85c";
 
 export const KAC_FRAMES: Sprite[] = [
   {
@@ -86,7 +86,7 @@ export const SIGNPOST: Sprite = {
     "...pppppp...",
     "...pppppp...",
   ],
-  palette: { p: "#2a335f", w: "#fff3d6", S: INK },
+  palette: { p: "#0d4568", w: "#e8f0f5", S: INK },
 };
 
 export const BENCH: Sprite = {
@@ -100,7 +100,7 @@ export const BENCH: Sprite = {
     "..p........p....",
     "..pppp..pppp....",
   ],
-  palette: { r: "#2a335f", w: "#7a6ff0", p: INK },
+  palette: { r: "#003153", w: "#6ba3c4", p: INK },
 };
 
 export const TREE: Sprite = {
@@ -118,7 +118,7 @@ export const TREE: Sprite = {
     "......tt......",
     "....tttttt....",
   ],
-  palette: { g: "#1d5f6e", w: "#4de3c2", t: "#2a335f" },
+  palette: { g: "#1a5a72", w: "#5ec8e6", t: "#0a1620" },
 };
 
 export const MAILBOX: Sprite = {
@@ -136,17 +136,17 @@ export const MAILBOX: Sprite = {
     ".....yy.....",
     "...yyyyyy...",
   ],
-  palette: { r: "#e86fd0", w: "#fff3d6", y: "#ffb35c" },
+  palette: { r: "#b87a8c", w: "#e8f0f5", y: "#d9a85c" },
 };
 
 export const FLOWER_A: Sprite = {
   rows: [".pp.", "pwwp", "pwwp", ".pp.", ".gg.", "gggg"],
-  palette: { p: "#ff5a3c", w: "#ffb35c", g: "#1d5f6e" },
+  palette: { p: "#d46a3a", w: "#d9a85c", g: "#1a5a72" },
 };
 
 export const FLOWER_B: Sprite = {
   rows: [".bb.", "bwwb", "bwwb", ".bb.", ".gg.", "gggg"],
-  palette: { b: "#9d7bff", w: "#f6f2e7", g: "#1d5f6e" },
+  palette: { b: "#6ba3c4", w: "#eef4f8", g: "#1a5a72" },
 };
 
 export const POND: Sprite = {
@@ -159,7 +159,7 @@ export const POND: Sprite = {
     "..wwwwwwwwww....",
     "....wwwwww......",
   ],
-  palette: { w: "#173a52", b: "#4de3c2" },
+  palette: { w: "#003153", b: "#5ec8e6" },
 };
 
 /* Moonlit pixel whale for the dream night-sea backdrop. Original art. */
@@ -175,5 +175,5 @@ export const WHALE: Sprite = {
     "...wwwwwwww........",
     "....wwww...........",
   ],
-  palette: { w: "#9d7bff", e: "#10142b" },
+  palette: { w: "#6ba3c4", e: "#0a1620" },
 };

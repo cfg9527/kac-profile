@@ -57,28 +57,29 @@ describe("KPP-7 palette", () => {
     expect(new Set(values.map((v) => v.toLowerCase())).size).toBe(values.length);
   });
 
-  it("4. palette reads as a night sea: dark night/deep/panel, teal glow, orange-red ember, purple violet", () => {
+  it("4. palette reads as Prussian blue night sea: dark surfaces, ice cyan glow, copper ember, steel accent", () => {
     for (const k of ["night", "deep", "panel"] as DreamColorName[]) {
       expect(relativeLuminance(DREAM_COLORS[k]), `${k} must be dark`).toBeLessThan(0.06);
       const { h } = hue(DREAM_COLORS[k]);
-      expect(h, `${k} hue should be blue/indigo/purple`).toBeGreaterThanOrEqual(200);
-      expect(h, `${k} hue should be blue/indigo/purple`).toBeLessThanOrEqual(300);
+      expect(h, `${k} hue should be Prussian / steel blue`).toBeGreaterThanOrEqual(195);
+      expect(h, `${k} hue should be Prussian / steel blue`).toBeLessThanOrEqual(220);
     }
+    expect(DREAM_COLORS.deep.toLowerCase()).toBe("#003153");
     const teal = hue(DREAM_COLORS.glowTeal);
-    expect(teal.h).toBeGreaterThanOrEqual(155);
-    expect(teal.h).toBeLessThanOrEqual(195);
+    expect(teal.h).toBeGreaterThanOrEqual(185);
+    expect(teal.h).toBeLessThanOrEqual(210);
     expect(relativeLuminance(DREAM_COLORS.glowTeal)).toBeGreaterThan(0.35);
     const ember = hue(DREAM_COLORS.ember);
-    expect(ember.h <= 25 || ember.h >= 345, "ember is orange-red").toBe(true);
+    expect(ember.h <= 25 || ember.h >= 345, "ember is copper/orange").toBe(true);
     const dusk = hue(DREAM_COLORS.dusk);
     expect(dusk.h).toBeGreaterThanOrEqual(15);
     expect(dusk.h).toBeLessThanOrEqual(45);
     const violet = hue(DREAM_COLORS.violet);
-    expect(violet.h).toBeGreaterThanOrEqual(250);
-    expect(violet.h).toBeLessThanOrEqual(300);
+    expect(violet.h).toBeGreaterThanOrEqual(195);
+    expect(violet.h).toBeLessThanOrEqual(220);
     const magenta = hue(DREAM_COLORS.magenta);
-    expect(magenta.h).toBeGreaterThanOrEqual(300);
-    expect(magenta.h).toBeLessThanOrEqual(345);
+    expect(magenta.h).toBeGreaterThanOrEqual(330);
+    expect(magenta.h).toBeLessThanOrEqual(355);
   });
 
   it("5. every TEXT_PAIRS entry passes WCAG AA", () => {
