@@ -109,10 +109,10 @@ describe("KPP-7 facts unchanged", () => {
     }
   });
 
-  it("7. ENTP, project names and the usage hint (arrow keys / WASD) survive the rewrite", () => {
+  it("7. project names and the usage hint (arrow keys / WASD) survive the rewrite; no MBTI/ENTP", () => {
     for (const lang of LANGS) {
       const c = siteContent[lang];
-      expect(c.sections.interests.title).toContain("ENTP");
+      expect(JSON.stringify(c)).not.toMatch(/ENTP|MBTI|mbti/i);
       expect((c.sections.projects.projects ?? []).map((p) => p.name)).toEqual(
         lang === "zh" ? ["futa9", "QRNG", "閱微"] : ["futa9", "QRNG", "閱微 (Yuewei)"],
       );
