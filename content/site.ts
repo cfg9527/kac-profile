@@ -125,9 +125,9 @@ export const siteContent: Record<Lang, SiteCopy> = {
         ],
       },
       interests: {
-        tabLabel: "興趣同性格",
+        tabLabel: "興趣",
         objectLabel: "長凳",
-        title: "ENTP · 夜晚坐喺長凳睇星",
+        title: "夜晚坐喺長凳睇星",
         body: [
           "喜歡在凌晨兩點拆解沒有生命的機械，或者任由墨水在吸水紙上無聲洇開成一片汪洋。指尖摸過粗糙的棉紙、冷硬的金屬倒角、被遺棄的建築藍圖，那些被標記了坐標卻從未建成的廢墟。沉溺於低頻的震動，像深海探測器傳回來的雜音，無始無終；追逐一切發酵過度、帶有霉味與舊皮革氣息的孤獨，收集那些早已停止運行的時鐘背面微弱的彈簧顫音。所有的熱度都被嚴密包裹在零度以下的藍調裏，不燃燒，只在極深的暗處，靜靜進行著一場永遠不打算對外公布的化學沉澱。",
         ],
@@ -183,7 +183,7 @@ export const siteContent: Record<Lang, SiteCopy> = {
       interests: {
         tabLabel: "Interests",
         objectLabel: "Bench",
-        title: "ENTP · sitting on the bench watching the stars",
+        title: "Sitting on the bench watching the stars",
         body: [...INTERESTS_EN],
       },
       projects: {

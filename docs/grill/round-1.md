@@ -15,7 +15,7 @@ KaC: correct this file if anything drifted.
    Garden-style card. Keyboard arrows/WASD on desktop; on-screen pad plus
    tap-to-walk on mobile; plain shortcut buttons as accessible fallback,
    popups closable with Esc.
-3. **Content**: 4 sections — (a) one-line intro, (b) interests + ENTP,
+3. **Content**: 4 sections — (a) one-line intro, (b) interests (no MBTI/ENTP),
    (c) projects futa9 / QRNG / 閱微 one line each, high level only,
    (d) contact with GitHub https://github.com/cfg9527 and an X handle
    placeholder in one config file. All copy lives in `content/site.ts`.

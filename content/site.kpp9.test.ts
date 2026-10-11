@@ -25,13 +25,13 @@ const CJK = /[\u2E80-\u2FFF\u3000-\u30FF\u3100-\u31FF\u3400-\u4DBF\u4E00-\u9FFF\
 const UNCHANGED = {
   zh: {
     intro: { tabLabel: "自我介紹", objectLabel: "路牌", title: "哈囉，我係 Desmond Cheung，夜海邊行緊過嚟！" },
-    interests: { tabLabel: "興趣同性格", objectLabel: "長凳", title: "ENTP · 夜晚坐喺長凳睇星" },
+    interests: { tabLabel: "興趣", objectLabel: "長凳", title: "夜晚坐喺長凳睇星" },
     projects: { tabLabel: "做緊嘅嘢", objectLabel: "大樹", title: "夢入面種緊嘅三樖嘢" },
     contact: { tabLabel: "聯絡", objectLabel: "郵箱", title: "喺潮聲入面寄封信畀我" },
   },
   en: {
     intro: { tabLabel: "Intro", objectLabel: "Signpost", title: "Hi, I'm Desmond Cheung, walking over from the night sea!" },
-    interests: { tabLabel: "Interests", objectLabel: "Bench", title: "ENTP · sitting on the bench watching the stars" },
+    interests: { tabLabel: "Interests", objectLabel: "Bench", title: "Sitting on the bench watching the stars" },
     projects: { tabLabel: "Projects", objectLabel: "Big tree", title: "Three things growing by the night sea" },
     contact: { tabLabel: "Contact", objectLabel: "Mailbox", title: "Drop me a letter in the sound of the tide" },
   },
